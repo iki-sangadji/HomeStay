@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.beranda');
+})->name('beranda');
+
+Route::get('/tentang', function () {
+    return view('pages.tentang');
+})->name('tentang');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
