@@ -2,7 +2,7 @@
 <title>Tentang</title>
 @section('content')
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('keren.jpg') }}');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('tentang.jpg') }}');" data-stellar-background-ratio="0.5">
       
     </section>
 
