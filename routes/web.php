@@ -21,5 +21,9 @@ Route::get('/tentang', function () {
     return view('pages.tentang');
 })->name('tentang');
 
+Route::get('/kontak', function () {
+    return view('pages.kontak');
+})->name('kontak');
+
 Auth::routes();
 

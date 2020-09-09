@@ -39,7 +39,7 @@
 	          <li class="nav-item"><a href="{{route('tentang')}}" class="nav-link">Tentang</a></li>
 	          <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Kontak</a></li>
+	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
 	          <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>
 
 	        </ul>
