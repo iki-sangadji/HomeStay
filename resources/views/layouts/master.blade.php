@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="{{ asset('vhomestay/css/icomoon.css') }}">
     <link rel="stylesheet" href="{{ asset('vhomestay/css/style.css') }}">
   </head>
+  
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="{{route('beranda')}}">Misool<span>Homestay</span></a>
+	      <a class="navbar-brand" href="{{route('beranda')}}">WPONTAN NTUN<span>Homestay</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -36,11 +37,11 @@
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
-	          <li class="nav-item"><a href="{{route('tentang')}}" class="nav-link">Tentang</a></li>
-	          <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="{{route('kamar')}}" class="nav-link">Kamar</a></li>
+	          <li class="nav-item"><a href="{{route('destinasi')}}" class="nav-link">Destinasi</a></li>
+	          <li class="nav-item"><a href="{{route('postingan')}}" class="nav-link">Postingan</a></li>
 	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
-	          <li class="nav-item cta"><a href="#" class="nav-link">Book Now</a></li>
+	          <li class="nav-item cta"><a href="#" class="nav-link">Paket Wisata</a></li>
 
 	        </ul>
 	      </div>
@@ -107,8 +108,9 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
           </div>
         </div>
       </div>
