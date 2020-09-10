@@ -55,8 +55,29 @@
 	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
 	          <li class="nav-item cta"><a href="{{route('paketwisata')}}" class="nav-link">Paket Wisata</a></li>
 
-	        </ul>
-	      </div>
+          </ul>
+          
+        </div>
+        @guest
+          <div class="d-flex justify-content-end">
+            <div class="p-1 ml-lg-3">
+              <button type="button" class="btn btn-outline-success rounded-pill" onclick="location.href='{{route('login')}}'">Masuk</button>
+            </div>
+            <div class="p-1 ml-lg-0">
+              <button type="button" class="btn btn-success rounded-pill" onclick="location.href='{{route('register')}}'">Daftar</button>
+            </div>
+          </div>
+        @endguest
+        @auth
+        <div class="p-2 bd-highlight ml-4">
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-danger rounded-pill">
+              <i class="zmdi zmdi-power"></i>Keluar
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>                     
+        </div>
+        @endauth
 	    </div>
 	  </nav>
     <!-- END nav -->
