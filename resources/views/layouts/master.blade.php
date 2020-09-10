@@ -41,7 +41,7 @@
 	          <li class="nav-item"><a href="{{route('destinasi')}}" class="nav-link">Destinasi</a></li>
 	          <li class="nav-item"><a href="{{route('postingan')}}" class="nav-link">Postingan</a></li>
 	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
-	          <li class="nav-item cta"><a href="#" class="nav-link">Paket Wisata</a></li>
+	          <li class="nav-item cta"><a href="{{route('paketwisata')}}" class="nav-link">Paket Wisata</a></li>
 
 	        </ul>
 	      </div>

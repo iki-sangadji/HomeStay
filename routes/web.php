@@ -33,5 +33,9 @@ Route::get('/kontak', function () {
     return view('pages.kontak');
 })->name('kontak');
 
+Route::get('/paketwisata', function () {
+    return view('pages.paketwisata');
+})->name('paketwisata');
+
 Auth::routes();
 
