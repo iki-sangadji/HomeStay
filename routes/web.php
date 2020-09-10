@@ -17,9 +17,17 @@ Route::get('/', function () {
     return view('pages.beranda');
 })->name('beranda');
 
-Route::get('/tentang', function () {
-    return view('pages.tentang');
-})->name('tentang');
+Route::get('/kamar', function () {
+    return view('pages.kamar');
+})->name('kamar');
+
+Route::get('/destinasi',function(){
+    return view('pages.destinasi');
+})->name('destinasi');
+
+Route::get('/postingan',function(){
+    return view('pages.postingan');
+})->name('postingan');
 
 Route::get('/kontak', function () {
     return view('pages.kontak');

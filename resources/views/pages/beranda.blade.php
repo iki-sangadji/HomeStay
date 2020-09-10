@@ -189,7 +189,7 @@
   </section>
 
 
-      <section class="ftco-section">
+  <section class="ftco-section">
       <div class="container">
           <div class="row justify-content-center pb-4">
         <div class="col-md-12 heading-section text-center ftco-animate">
@@ -197,42 +197,82 @@
         </div>
       </div>
       <div class="row">
-          <div class="col-md-3 ftco-animate">
+          <div class="col-md-3 ftco-animate mb-2">
               <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url(images/place-1.jpg);">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
                       <div class="text">
-                          <h3>Singapore</h3>
-                          <span>8 Tours</span>
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
                       </div>
                   </a>
               </div>
           </div>
-          <div class="col-md-3 ftco-animate">
+          <div class="col-md-3 ftco-animate mb-2">
               <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url(images/place-2.jpg);">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
                       <div class="text">
-                          <h3>Canada</h3>
-                          <span>2 Tours</span>
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
                       </div>
                   </a>
               </div>
           </div>
-          <div class="col-md-3 ftco-animate">
+          <div class="col-md-3 ftco-animate mb-2">
               <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url(images/place-3.jpg);">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
                       <div class="text">
-                          <h3>Thailand</h3>
-                          <span>5 Tours</span>
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
                       </div>
                   </a>
               </div>
           </div>
-          <div class="col-md-3 ftco-animate">
+          <div class="col-md-3 ftco-animate mb-2">
               <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url(images/place-4.jpg);">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
                       <div class="text">
-                          <h3>Autralia</h3>
-                          <span>5 Tours</span>
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-3 ftco-animate mb-2">
+              <div class="project-destination">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
+                      <div class="text">
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-3 ftco-animate mb-2">
+              <div class="project-destination">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
+                      <div class="text">
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-3 ftco-animate mb-2">
+              <div class="project-destination">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
+                      <div class="text">
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-md-3 ftco-animate mb-2">
+              <div class="project-destination">
+                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
+                      <div class="text">
+                          <h3>Pulau Banoze Termenung</h3>
+                          <span>1</span>
                       </div>
                   </a>
               </div>
