@@ -36,10 +36,21 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
-	          <li class="nav-item"><a href="{{route('kamar')}}" class="nav-link">Kamar</a></li>
-	          <li class="nav-item"><a href="{{route('destinasi')}}" class="nav-link">Destinasi</a></li>
-	          <li class="nav-item"><a href="{{route('postingan')}}" class="nav-link">Postingan</a></li>
+            <li class="nav-item active"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Kamar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="{{route('detailKamar')}}">Detail</a>
+                <a class="dropdown-item" href="{{route('hargaKamar')}}">Harga</a>
+                <a class="dropdown-item" href="{{route('fasilitasKamar')}}">Fasilitas</a>
+              </div>
+            </li>
+
+	          <li class="nav-item"><a href="{{route('galeri')}}" class="nav-link">Galeri</a></li>
+	          <li class="nav-item"><a href="{{route('profil')}}" class="nav-link">Profil</a></li>
 	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
 	          <li class="nav-item cta"><a href="{{route('paketwisata')}}" class="nav-link">Paket Wisata</a></li>
 
