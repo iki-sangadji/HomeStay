@@ -48,7 +48,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-2">Alamat Email</h3>
-	            <p><a href="mailto:wpontantun@gmail.com">wpontantun@gmail.com</a></p>
+	            <p><a href="mailto:wpontantun@gmail.com">wopontantun@gmail.com</a></p>
 	          </div>
           </div>
         </div>

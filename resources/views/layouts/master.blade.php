@@ -29,7 +29,7 @@
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="{{route('beranda')}}">WPONTAN NTUN<span>Homestay</span></a>
+	      <a class="navbar-brand" href="{{route('beranda')}}">WOPONTA NTUN<span>Homestay</span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -114,7 +114,7 @@
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Kampung Folley, Distrik Misool Timur, Kabupaten Raja Ampat, Papua Barat</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0812 4002 0550</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">wpontantun@gmail.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">wopontantun@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -124,7 +124,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy; Wpontan Ntun Homestay 2020
+              Copyright &copy; Woponta Ntun Homestay 2020
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
