@@ -17,17 +17,29 @@ Route::get('/', function () {
     return view('pages.beranda');
 })->name('beranda');
 
-Route::get('/kamar', function () {
-    return view('pages.kamar');
-})->name('kamar');
+// Kamar [fasilitas, harga, detail]
 
-Route::get('/destinasi',function(){
-    return view('pages.destinasi');
-})->name('destinasi');
+Route::get('/detailKamar', function () {
+    return view('kamar.detailKamar');
+})->name('detailKamar');
 
-Route::get('/postingan',function(){
-    return view('pages.postingan');
-})->name('postingan');
+Route::get('/hargaKamar', function () {
+    return view('kamar.hargaKamar');
+})->name('hargaKamar');
+
+Route::get('/fasilitasKamar', function () {
+    return view('kamar.fasilitasKamar');
+})->name('fasilitasKamar');
+
+// 
+
+Route::get('/galeri',function(){
+    return view('pages.galeri');
+})->name('galeri');
+
+Route::get('/profil',function(){
+    return view('pages.profil');
+})->name('profil');
 
 Route::get('/kontak', function () {
     return view('pages.kontak');

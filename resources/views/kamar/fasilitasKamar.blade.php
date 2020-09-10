@@ -1,12 +1,12 @@
 @extends('layouts.master')
-<title>Kamar</title>
+<title>Fasilitas Kamar</title>
 @section('content')
-    
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('warm-night.jpg') }}');" data-stellar-background-ratio="0.5">
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/upside_woponta_ntu.jpeg') }}');" data-stellar-background-ratio="0.5">
     
     </section>
 
-    
+
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center pb-4">
@@ -115,4 +115,5 @@
 		</div>
 		</div>
 	</section>
+    
 @endsection
