@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{ asset('vhomestay/css/flaticon.css') }}">
     <link rel="stylesheet" href="{{ asset('vhomestay/css/icomoon.css') }}">
     <link rel="stylesheet" href="{{ asset('vhomestay/css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   
   <body>
@@ -44,8 +45,8 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="{{route('detailKamar')}}">Detail</a>
-                <a class="dropdown-item" href="{{route('hargaKamar')}}">Harga</a>
                 <a class="dropdown-item" href="{{route('fasilitasKamar')}}">Fasilitas</a>
+                <a class="dropdown-item" href="{{route('hargaKamar')}}">Harga</a>
               </div>
             </li>
 
