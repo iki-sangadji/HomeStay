@@ -49,5 +49,9 @@ Route::get('/paketwisata', function () {
     return view('pages.paketwisata');
 })->name('paketwisata');
 
+Route::get('/fasilitashomestay', function () {
+    return view('pages.fasilitashomestay');
+})->name('fasilitashomestay');
+
 Auth::routes();
 

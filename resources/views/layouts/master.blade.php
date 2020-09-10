@@ -60,6 +60,15 @@
 	  </nav>
     <!-- END nav -->
     
+    <style>
+      .tekstengahbawah{
+        margin-top: 50%; 
+        color:white;
+      }
+      
+    </style>
+
+
     @yield('content')
 
     <footer class="ftco-footer bg-bottom" style="background-image: url(images/footer-bg.jpg);">
