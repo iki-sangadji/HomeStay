@@ -23,6 +23,15 @@ Route::get('/detailKamar', function () {
     return view('kamar.detailKamar');
 })->name('detailKamar');
 
+Route::get('/tambahKamar',function(){
+    return view('kamar.tambahKamar');
+})->name('tambahKamar');
+
+Route::get('/ubahKamar',function(){
+    return view('kamar.ubahkamar');
+})->name('ubahKamar');
+
+
 Route::get('/hargaKamar', function () {
     return view('kamar.hargaKamar');
 })->name('hargaKamar');

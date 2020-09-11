@@ -5,36 +5,50 @@
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/view_from_woponta_ntu.jpeg') }}');" data-stellar-background-ratio="0.5">
 	
 	</section>
-	
-	<section class="ftco-section">
+
+	<section class="ftco-counter services-section bg-light" id="section-counter">
 		<div class="container">
-			<div class="d-flex justify-content-between mt-5 search-wrap-1 ftco-animate p-4">
-				<div>
-					<p class="h1 text-uppercase text-white">Tarif Inap</p>
+			<div class="row d-flex py-4">
+				<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
+					<h2 class="mb-4">Ubah Deskripsi Harga Kamar</h2>
+					<p>
+						Perbarui Deskripsi Harga Kamar di <b>Woponta Ntu Homestay</b>.
+					</p>
+					<p>
+						Memastikan memasukkan data tarif harga untuk biaya inap permalamnya.
+						Silahkan ubah dan perbarui deskripsi untuk tarif inap kamar.
+					</p>
 				</div>
-				<div>
-					<a href="#" class="btn btn-lg btn-primary text-center">
-						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
-							<path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
-						</svg>
-						Baru
-					</a>
+				<div class="col-md-6">
+					<form action="#" class="bg-light p-5 contact-form">
+						<div class="form-group">
+							<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Tambah Data Tipe kamar baru"></textarea>
+						</div>
+						<div class="form-group">
+						<input type="submit" value="Simpan" class="btn btn-primary py-3 px-5">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
 
+
     <section class="ftco-counter img" id="section-counter">
 		<div class="container">
-			<div class="row d-flex ftco-animate">
+			<div class="row justify-content-center p-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Tarif Bermalam</h2>
+				</div>
+			</div>
+			<div class="row d-flex ftco-animate mb-4">
 				<div class="col-md-6 d-flex">
 					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/wall_woponta_ntu.jpeg')}});"></div>
 				</div>
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Kapasitas Kamar Yang Fleksibel</h2>
+							<h2 class="mb-4 text-uppercase">Tarif Kamar Yang Fleksibel</h2>
 							<p class="text-justify">Liburan bareng sahabat / keluarga itu luar biasa menyenangkan apa lagi bila 
 								kita bisa menemukan <b>homestay</b> yang harganya tepat dan sudah pasti nyaman.
 								Tarif yang sesuai untuk kamu yang mau <b>sendiri atau bersama teman/keluarga</b>.
@@ -47,8 +61,7 @@
 		</div>
 	</section>
 
-
-	<section class="ftco-section">
+	{{-- <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center pb-4">
 				<div class="col-md-12 heading-section text-center ftco-animate">
@@ -64,8 +77,7 @@
                             <p class="text-center"><i class="fa fa-user text-primary mr-1" aria-hidden="true"></i>Per Orang</p>
                             <p class="text-center"><i class="fa fa-bed text-primary mr-1" aria-hidden="true"></i>Per Kamar</p>
                         </div>
-                    </div>
-                    
+                    </div> 
                     <div class="mt-1 bg-white d-flex justify-content-end">
                         <a href="#">
                             <button class="btn btn-sm btn-primary mr-1">
@@ -92,11 +104,8 @@
                             </button>
                         </form>
                     </div>
-
                 </div>
-
                 
-
                 <div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
 						<div class="text p-4">
@@ -177,7 +186,7 @@
 
             </div>
 		</div>
-    </section>
+    </section> --}}
     
 
 
