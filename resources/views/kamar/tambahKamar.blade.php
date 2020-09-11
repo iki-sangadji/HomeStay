@@ -3,7 +3,13 @@
 @section('content')
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('warm-night.jpg') }}');" data-stellar-background-ratio="0.5">
-	
+        <div class="container">
+			<div class="row justify-content-center pb-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4 tekstengahbawah">Tambah Detail Kamar</h2>
+				</div>
+			</div>
+		</div>
 	</section>
 
     <section class="ftco-counter img" id="section-counter">

@@ -69,6 +69,10 @@ Route::get('/paketwisata', function () {
     return view('pages.paketwisata');
 })->name('paketwisata');
 
+Route::get('/tambah_paket_wisata', function () {
+    return view('pages.tambah_paket_wisata');
+})->name('tambah_paket_wisata');
+
 Route::get('/fasilitashomestay', function () {
     return view('pages.fasilitashomestay');
 })->name('fasilitashomestay');
