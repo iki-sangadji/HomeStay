@@ -47,6 +47,14 @@ Route::get('/galeri',function(){
     return view('galeri.galeri');
 })->name('galeri');
 
+Route::get('/tambahSpot',function(){
+    return view('galeri.tambahSpot');
+})->name('tambahSpot');
+
+Route::get('/ubahSpot',function(){
+    return view('galeri.ubahSpot');
+})->name('ubahSpot');
+
 // end Galeri
 
 Route::get('/profil',function(){

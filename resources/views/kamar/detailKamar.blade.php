@@ -102,7 +102,7 @@
 									</span>
 								</button>
 							</form>
-                    </div>
+                  	  </div>
 					</div>
 				</div>
 				<div class="col-sm-6 ftco-animate">
