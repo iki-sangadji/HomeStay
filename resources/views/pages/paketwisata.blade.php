@@ -1,7 +1,8 @@
 @extends('layouts.master')
 <title>Paket Wisata</title>
 @section('content')
-    
+{{--  Projek With K 2020 --}}
+     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('keren.jpg') }}');" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row justify-content-center pb-4">
@@ -16,8 +17,9 @@
         <div class="container">
             <div class="row justify-content-center pb-4">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <a href="{{route('tambah_paket_wisata')}}" class="btn btn-success">Tambah Paket Trip Wisata</a>
+                
                 <h2 class="mb-4">Paket Trip Wisata</h2>
+                <a href="{{route('tambah_paket_wisata')}}" class="btn btn-success">Tambah Paket Trip Wisata</a>
                 <hr>
             </div>
             <div class="col-md-12 heading-section text-center ftco-animate">
@@ -26,6 +28,7 @@
                     <br> Tarif trip sekali jalan : <b> 4.000.000</b>
                 </p> 
                     <a href="#" class="btn btn-danger">Hapus Paket</a>
+                    <a href="{{route('edit_paket_wisata')}}" class="btn btn-info">Ubah Paket</a>
             </div>
             </div>
             <div class="row">
@@ -78,10 +81,10 @@
                             </div>
                         </a>
                     </div>
-                </div>        
-                
+                </div>           
                 
             </div>
+            <hr>
         </div>
     </section>
 

@@ -1,6 +1,7 @@
 @extends('layouts.master')
 <title>Kontak</title>
 @section('content')
+{{--  Projek With K 2020 --}}
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('clown-fish.jpg') }}');" data-stellar-background-ratio="0.5">
         <div class="container">

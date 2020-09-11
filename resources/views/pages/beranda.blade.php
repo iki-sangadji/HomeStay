@@ -1,7 +1,8 @@
 @extends('layouts.master')
 <title>Beranda</title>
 @section('content')
-
+{{--  Projek With K 2020 --}}
+ 
 <div class="hero-wrap" style="background-image: url('{{ asset('welcome.jpg') }}' );" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">

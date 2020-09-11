@@ -1,7 +1,8 @@
 @extends('layouts.master')
 <title>Harga Kamar</title>
 @section('content')
-    
+{{--  Projek With K 2020 --}}
+ 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/view_from_woponta_ntu.jpeg') }}');" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row justify-content-center pb-4">
