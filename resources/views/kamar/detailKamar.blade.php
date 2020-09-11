@@ -13,7 +13,7 @@
 					<p class="h1 text-uppercase text-white">Tipe Kamar</p>
 				</div>
 				<div>
-					<a href="#" class="btn btn-lg btn-primary text-center">
+					<a href="{{route('tambahKamar')}}" class="btn btn-lg btn-primary text-center">
 						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
 							<path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
@@ -71,7 +71,7 @@
 							</p>
 						</div>
 						<div class="card-footer bg-white d-flex justify-content-end">
-							<a href="#">
+							<a href="{{route('ubahKamar')}}">
 								<button class="btn btn-lg btn-primary mr-1">
 									<span class="align-middle">
 										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@
 							</p>
 						</div>
 						<div class="card-footer bg-white d-flex justify-content-end">
-							<a href="#">
+							<a href="{{route('ubahKamar')}}">
 								<button class="btn btn-lg btn-primary mr-1">
 									<span class="align-middle">
 										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
