@@ -81,25 +81,23 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Vacation</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Woponta Ntu Homestay</h2>
+              <p>Memberikan rasa aman dan nyaman. Pengalaman tak terlupakan.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-twitter"></i></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-facebook"></i></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-instagram"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Infromation</h2>
+              <h2 class="ftco-heading-2">Informasi</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-                <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                <li><a href="{{route('detailKamar')}}" class="py-2 d-block">Detail Kamar</a></li>
+                <li><a href="{{route('fasilitasKamar')}}" class="py-2 d-block">Fasilitas Kamar</a></li>
+                <li><a href="{{route('hargaKamar')}}" class="py-2 d-block">Harga Kamar</a></li>
+                <li><a href="{{route('galeri')}}" class="py-2 d-block">Geleri Wisata</a></li>
               </ul>
             </div>
           </div>

@@ -61,6 +61,8 @@ Route::get('/profil',function(){
     return view('pages.profil');
 })->name('profil');
 
+
+
 Route::get('/kontak', function () {
     return view('pages.kontak');
 })->name('kontak');

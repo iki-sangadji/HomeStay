@@ -14,11 +14,6 @@
 
     <section class="ftco-counter img" id="section-counter">
 		<div class="container">
-            <div class="row ftco-animate justify-content-center pb-4">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Perbarui Detail Kamar</h2>
-				</div>
-			</div>
 			<div class="row d-flex ftco-animate">
 				<div class="col-md-6 d-flex">
 					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/frontside_woponta_ntu.jpeg')}});"></div>
@@ -26,7 +21,7 @@
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Form Perbarui Data Kamar</h2>
+							<h2 class="mb-4 text-uppercase">Form Perbarui Data Tipe Kamar</h2>
 							<form method="POST" action="" enctype="multipart/form-data" class="bg-light p-5 contact-form">
                             @csrf
                                 <div class="form-group row">

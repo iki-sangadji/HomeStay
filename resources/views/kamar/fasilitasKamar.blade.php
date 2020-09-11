@@ -173,11 +173,6 @@
 
 	<section class="ftco-counter img mb-4" id="section-counter">
 		<div class="container">
-			<div class="row justify-content-center p-4">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Fasilitas Kami</h2>
-				</div>
-			</div>
 			<div class="row d-flex ftco-animate">
 				<div class="col-md-6 d-flex">
 					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/frontside_woponta_ntu.jpeg')}});"></div>
@@ -185,7 +180,7 @@
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Menambah kenyamanan Anda, Tersedia :</h2>
+							<h2 class="mb-4">Menambah kenyamanan Anda, Tersedia :</h2>
 							<p class="text-justify">
 								Fan	<br>
 								Hammock <br>

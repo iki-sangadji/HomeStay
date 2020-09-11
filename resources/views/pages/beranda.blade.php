@@ -14,460 +14,215 @@
 </div>
 
 
-  <section class="ftco-section services-section bg-light">
+<section class="ftco-section services-section bg-light">
     <div class="container">
-      <div class="row d-flex">
+    <div class="row d-flex">
         <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
-            <h2 class="mb-4">It's time to start your adventure</h2>
-          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-          A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-          <p><a href="#" class="btn btn-primary py-3 px-4">Search Destination</a></p>
+        <h2 class="mb-4">Saatnya melakukan perjalanan dan petualangan</h2>
+        <p>
+            Keindahan dari <b>Raja Ampat</b> tidak perlu dipertanyakan lagi, yang juga menjadi salah satu primadona bagi traveller. 
+            <b> Pulau Misool </b> dengan pesona dan keindaan bawah lautnya mempunyai 
+            daya tarik yang begitu cantik dan menggoda untuk dilewatkan. 
+        </p>
+        <p>Keunikan Pulau Misool adalah adanya deretan batu karang di bagian timur dan 
+            indahnya pasir putih dengan pemandangan hutan mangrove hijau yang memesona. 
+            Air lautnya juga terlihat cantik dengan warna biru turquoise. Saking beningnya air laut di Pulau Misool, kamu bisa mudah melihat aneka kekayaaan alam di titik penyelamannya, 
+            seperti berbagai jenis ikan, hiu, penyu, terumbu karang, dan lain-lain.
+        </p>
+        <p><a href="{{route('paketwisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
         </div>
         <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-paragliding"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading mb-3">Activities</h3>
-                      <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                    </div>
-                  </div>      
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-route"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading mb-3">Travel Arrangements</h3>
-                      <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                    </div>
-                  </div>    
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-tour-guide"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading mb-3">Private Guide</h3>
-                      <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                    </div>
-                  </div>      
-                </div>
-                <div class="col-md-6 d-flex align-self-stretch ftco-animate">
-                  <div class="media block-6 services d-block">
-                    <div class="icon"><span class="flaticon-map"></span></div>
-                    <div class="media-body">
-                      <h3 class="heading mb-3">Location Manager</h3>
-                      <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                    </div>
-                  </div>      
+        <div class="row">
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+                <div class="icon"><span class="flaticon-paragliding"></span></div>
+                <div class="media-body">
+                <h3 class="heading mb-3">Aktifitas</h3>
+                <p>Banyak aktiftitas seru dan  menyenangkan di Pulau misool</p>
                 </div>
             </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+                <div class="icon"><span class="flaticon-route"></span></div>
+                <div class="media-body">
+                <h3 class="heading mb-3">Agenda Perjalanan</h3>
+                <p>Mempermudah agenda perjalanan dengan paket wisata yang seru dan memorable.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+                <div class="icon"><span class="flaticon-tour-guide"></span></div>
+                <div class="media-body">
+                <h3 class="heading mb-3">Private Guide</h3>
+                <p>Ditemani oleh Guide yang ramah dan menyenangkan.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+                <div class="icon"><span class="flaticon-map"></span></div>
+                <div class="media-body">
+                <h3 class="heading mb-3">Lokasi dan Spot Wisata</h3>
+                <p>Daftar paket yang terjadwal dan sudah terakomodasi. Tidak perlu ribet lagi. </p>
+                </div>
+            </div>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
-  </section>
+    </div>
+</section>
 
-  <section class="ftco-counter img" id="section-counter">
-      <div class="container">
-          <div class="row d-flex">
-              <div class="col-md-6 d-flex">
-                  <div class="img d-flex align-self-stretch" style="background-image:url(images/about.jpg);"></div>
-              </div>
-              <div class="col-md-6 pl-md-5 py-5">
-                  <div class="row justify-content-start pb-3">
-                <div class="col-md-12 heading-section ftco-animate">
-                  <h2 class="mb-4">Make Your Tour Memorable and Safe With Us</h2>
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                </div>
-              </div>
-                  <div class="row">
-                <div class="col-md-4 justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center mb-4">
-                    <div class="text">
-                      <strong class="number" data-number="300">0</strong>
-                      <span>Successful Tours</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center mb-4">
-                    <div class="text">
-                      <strong class="number" data-number="24000">0</strong>
-                      <span>Happy Tourist</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 justify-content-center counter-wrap ftco-animate">
-                  <div class="block-18 text-center mb-4">
-                    <div class="text">
-                      <strong class="number" data-number="200">0</strong>
-                      <span>Place Explored</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </div>
-      </div>
-  </section>
-
-
-  <section class="ftco-section">
-      <div class="container">
-          <div class="row justify-content-center pb-4">
-        <div class="col-md-12 heading-section text-center ftco-animate">
-          <h2 class="mb-4">Best Place Destination</h2>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          <div class="col-md-3 ftco-animate mb-2">
-              <div class="project-destination">
-                  <a href="#" class="img" style="background-image: url('{{ asset('keren.jpg') }}');">
-                      <div class="text">
-                          <h3>Pulau Banoze Termenung</h3>
-                          <span>1</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
-      </div>
-      </div>
-  </section>
-
-  <section class="ftco-section ftco-no-pt">
-      <div class="container">
-          <div class="row justify-content-center pb-4">
-        <div class="col-md-12 heading-section text-center ftco-animate">
-          <h2 class="mb-4">Tour Destination</h2>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-1.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">8 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-mountains"></span>Near Mountain</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-2.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">10 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-3.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">7 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-4.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">8 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-5.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">10 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-              <div class="project-wrap">
-                  <a href="#" class="img" style="background-image: url(images/destination-6.jpg);"></a>
-                  <div class="text p-4">
-                      <span class="price">$300/person</span>
-                      <span class="days">7 Days Tour</span>
-                      <h3><a href="#">Bali, Indonesia</a></h3>
-                      <p class="location"><span class="ion-ios-map"></span> Bali, Indonesia</p>
-                      <ul>
-                          <li><span class="flaticon-shower"></span>2</li>
-                          <li><span class="flaticon-king-size"></span>3</li>
-                          <li><span class="flaticon-sun-umbrella"></span>Near Beach</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-  </section>
-
-  <section class="ftco-section testimony-section bg-bottom" style="background-image: url(images/bg_3.jpg);">
+<section class="ftco-counter img" id="section-counter">
     <div class="container">
-      <div class="row justify-content-center pb-4">
-        <div class="col-md-7 text-center heading-section ftco-animate">
-          <h2 class="mb-4">Tourist Feedback</h2>
+    <div class="row d-flex">
+        <div class="col-md-6 d-flex">
+        <div class="img d-flex align-self-stretch" style="background-image:url('{{ asset('clown-fish.jpg') }}');"></div>
         </div>
-      </div>
-      <div class="row ftco-animate">
-        <div class="col-md-12">
-          <div class="carousel-testimony owl-carousel ftco-owl">
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                      <div class="pl-3">
-                          <p class="name">Roger Scott</p>
-                          <span class="position">Marketing Manager</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
+        <div class="col-md-6 pl-md-5 py-5">
+        <div class="row justify-content-start pb-3">
+            <div class="col-md-12 heading-section ftco-animate">
+            <h2 class="mb-4">Jadikan Tur Anda Berkesan dan Aman Bersama Kami</h2>
+            <p>
+                Momen berlibur juga akan jauh lebih berkesan jika dilewatkan dengan pengalaman yang menyenangkan. 
+                Ingin Menikmati keindahan dan daya tarik di <b>Pulau Misool</b> kami dapat menyediakan tempat untuk
+                menginap dan memiliki agenda perjalanan dengan paket wisata terbaik, aman dan nyaman.</p>
             </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                      <div class="pl-3">
-                          <p class="name">Roger Scott</p>
-                          <span class="position">Marketing Manager</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                      <div class="pl-3">
-                          <p class="name">Roger Scott</p>
-                          <span class="position">Marketing Manager</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                      <div class="pl-3">
-                          <p class="name">Roger Scott</p>
-                          <span class="position">Marketing Manager</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="testimony-wrap py-4">
-                <div class="text">
-                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                  <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                      <div class="pl-3">
-                          <p class="name">Roger Scott</p>
-                          <span class="position">Marketing Manager</span>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        </div>
     </div>
-  </section>
+    </div>
+</section>
 
 
-  <section class="ftco-section">
+<section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center pb-4">
-        <div class="col-md-12 heading-section text-center ftco-animate">
-          <h2 class="mb-4">Recent Post</h2>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-                <div class="d-flex align-items-center mb-4 topp">
-                    <div class="one">
-                        <span class="day">21</span>
-                    </div>
-                    <div class="two">
-                        <span class="yr">2019</span>
-                        <span class="mos">August</span>
-                    </div>
-                </div>
-              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h2 class="mb-4">Destinasi Populer</h2>
             </div>
-          </div>
         </div>
-        <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry justify-content-end">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-                <div class="d-flex align-items-center mb-4 topp">
-                    <div class="one">
-                        <span class="day">21</span>
-                    </div>
-                    <div class="two">
-                        <span class="yr">2019</span>
-                        <span class="mos">August</span>
-                    </div>
+        <div class="row">
+            <div class="col-md-3 ftco-animate mb-4">
+                <div class="project-destination">
+                    <a href="#" class="img" style="background-image: url('{{ asset('Pulau Banoz.jpg') }}');">
+                        <div class="text">
+                            <h3>Pulau Banoz</h3>
+                            <span>1</span>
+                        </div>
+                    </a>
                 </div>
-              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry">
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-                <div class="d-flex align-items-center mb-4 topp">
-                    <div class="one">
-                        <span class="day">21</span>
-                    </div>
-                    <div class="two">
-                        <span class="yr">2019</span>
-                        <span class="mos">August</span>
-                    </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <div class="project-destination">
+                    <a href="#" class="img" style="background-image: url('{{ asset('Tangga Seribu.jpg') }}');">
+                        <div class="text">
+                            <h3>Tangga Seribu</h3>
+                            <span>2</span>
+                        </div>
+                    </a>
                 </div>
-              <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
-          </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <div class="project-destination">
+                    <a href="#" class="img" style="background-image: url('{{ asset('Goa Puteri Termenung.jpg') }}');">
+                        <div class="text">
+                            <h3>Goa Puteri Termenung</h3>
+                            <span>3</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <div class="project-destination">
+                    <a href="#" class="img" style="background-image: url('{{ asset('Danau Love.jpg') }}');">
+                        <div class="text">
+                            <h3>Danau Love</h3>
+                            <span>4</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <div class="project-destination">
+                    <a href="#" class="img" style="background-image: url('{{ asset('Batu Pensil.jpg') }}');">
+                        <div class="text">
+                            <h3>Batu Pensil</h3>
+                            <span>5</span>
+                        </div>
+                    </a>
+                </div>
+            </div>  
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row ftco-animate justify-content-center pb-4">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h2 class="mb-4">Detail Kamar</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 ftco-animate">
+					<div class="card mb-3" style="height:50%">
+						<img src="{{asset('images/kamar_woponta_ntu.jpeg')}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
+						<div class="card-body">
+							<h5 class="card-title">Double Bed</h5>
+							<p class="card-text">
+								This is a wider card with supporting text below <br> 
+								as a natural lead-in to additional content. <br> 
+								This content is a little bit longer.
+								This is a wider card with supporting text below <br> 
+								as a natural lead-in to additional content. <br> 
+								This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 ftco-animate">
+					<div class="card mb-3" style="height:50%">
+						<img src="{{asset('images/kamar_woponta_ntu.jpeg')}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
+						<div class="card-body">
+							<h5 class="card-title">Single Bed</h5>
+							<p class="card-text">
+								This is a wider card with supporting text below <br> 
+								as a natural lead-in to additional content. <br> 
+								This content is a little bit longer.
+								This is a wider card with supporting text below <br> 
+								as a natural lead-in to additional content. <br> 
+								This content is a little bit longer.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-counter img mb-4" id="section-counter">
+		<div class="container">
+			<div class="row d-flex ftco-animate">
+				<div class="col-md-6 d-flex">
+					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/frontside_woponta_ntu.jpeg')}});"></div>
+				</div>
+				<div class="col-md-6 pl-md-5 py-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h2 class="mb-4">Menambah kenyamanan Anda, Tersedia :</h2>
+							<p class="text-justify">
+								Fan	<br>
+								Hammock <br>
+								Electric plugs<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{-- <hr> --}}
+		</div>
+	</section>
 @endsection
