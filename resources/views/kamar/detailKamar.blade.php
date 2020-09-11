@@ -2,7 +2,15 @@
 <title>Detail Kamar</title>
 @section('content')
 {{--  Projek With K 2020 --}}
-    
+	
+	@if (session('message'))
+	<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
+		<p class="text-success">{{session('message')}}</p>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	@endif
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('warm-night.jpg') }}');" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row justify-content-center pb-4">
@@ -62,92 +70,53 @@
 					<h2 class="mb-4">Detail Kamar</h2>
 				</div>
 			</div>
+
+			@if ($kamarList)
 			<div class="row">
+				@foreach ($kamarList as $row)
 				<div class="col-sm-6 ftco-animate">
 					<div class="card mb-3" style="height:50%">
-						<img src="{{asset('images/kamar_woponta_ntu.jpeg')}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
+						<img src="{{asset('storage/'.$row->gambar)}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
 						<div class="card-body">
-							<h5 class="card-title">Double Bed</h5>
-							<p class="card-text">
-								This is a wider card with supporting text below <br> 
-								as a natural lead-in to additional content. <br> 
-								This content is a little bit longer.
-								This is a wider card with supporting text below <br> 
-								as a natural lead-in to additional content. <br> 
-								This content is a little bit longer.
+							<h5 class="card-title">{{$row->nama}}</h5>
+							<p class="card-text" style="white-space: pre-wrap;">
+								{{$row->deskripsi}}
 							</p>
 						</div>
-						<div class="card-footer bg-white d-flex justify-content-end">
-							<a href="{{route('ubahKamar')}}">
-								<button class="btn btn-lg btn-primary mr-1">
-									<span class="align-middle">
-										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-										<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-										</svg>
-										Edit
-									</span>
-								</button>
-							</a>
-							<form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="" method="DELETE" >
-								{{ csrf_field() }}
-								<input type="hidden" name="_method" value="DELETE">
-								
-								<button class="btn btn-primary btn-lg btn-block" type="submit"> 
-									<span class="align-middle">
-										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-										</svg>
-										Hapus
-									</span>
-								</button>
-							</form>
+						@auth
+							<div class="card-footer bg-white d-flex justify-content-end">
+								<a href="{{route('edit_kamar',$row->id_kamar)}}">
+									<button class="btn btn-lg btn-primary mr-1">
+										<span class="align-middle">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+											<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+											</svg>
+											Edit
+										</span>
+									</button>
+								</a>
+								<form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route('delete_kamar',$row->id_kamar)}}" method="get" >
+									{{ csrf_field() }}
+									<input type="hidden" name="_method" value="DELETE">
+									
+									<button class="btn btn-primary btn-lg btn-block" type="submit"> 
+										<span class="align-middle">
+											<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+											</svg>
+											Hapus
+										</span>
+									</button>
+								</form>
+							@endauth
                   	  </div>
 					</div>
 				</div>
-				<div class="col-sm-6 ftco-animate">
-					<div class="card mb-3" style="height:50%">
-						<img src="{{asset('images/kamar_woponta_ntu.jpeg')}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
-						<div class="card-body">
-							<h5 class="card-title">Single Bed</h5>
-							<p class="card-text">
-								This is a wider card with supporting text below <br> 
-								as a natural lead-in to additional content. <br> 
-								This content is a little bit longer.
-								This is a wider card with supporting text below <br> 
-								as a natural lead-in to additional content. <br> 
-								This content is a little bit longer.
-							</p>
-						</div>
-						<div class="card-footer bg-white d-flex justify-content-end">
-							<a href="{{route('ubahKamar')}}">
-								<button class="btn btn-lg btn-primary mr-1">
-									<span class="align-middle">
-										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-										<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-										</svg>
-										Edit
-									</span>
-								</button>
-							</a>
-							<form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="" method="DELETE" >
-								{{ csrf_field() }}
-								<input type="hidden" name="_method" value="DELETE">
-								
-								<button class="btn btn-primary btn-lg" type="submit"> 
-									<span class="align-middle">
-										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-										</svg>
-										Hapus
-									</span>
-								</button>
-							</form>
-                    	</div>
-					</div>
-				</div>
+				@endforeach
+				
 			</div>
+			@endif
 		</div>
 	</section>
 

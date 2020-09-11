@@ -37,16 +37,16 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
             
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kamar
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="{{route('detailKamar')}}">Detail</a>
-                <a class="dropdown-item" href="{{route('fasilitasKamar')}}">Fasilitas</a>
-                <a class="dropdown-item" href="{{route('hargaKamar')}}">Harga</a>
+                <a class="dropdown-item" href="{{route('index_kamar')}}">Detail</a>
+                <a class="dropdown-item" href="{{route('fasilitas_kamar')}}">Fasilitas</a>
+                <a class="dropdown-item" href="{{route('harga_kamar')}}">Harga</a>
               </div>
             </li>
 

@@ -13,32 +13,38 @@
 		</div>
 	</section>
 
-	<section class="ftco-counter services-section bg-light" id="section-counter">
-		<div class="container">
-			<div class="row d-flex py-4">
-				<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
-					<h2 class="mb-4">Ubah Deskripsi Harga Kamar</h2>
-					<p>
-						Perbarui Deskripsi Harga Kamar di <b>Woponta Ntu Homestay</b>.
-					</p>
-					<p>
-						Memastikan memasukkan data tarif harga untuk biaya inap permalamnya.
-						Silahkan ubah dan perbarui deskripsi untuk tarif inap kamar.
-					</p>
-				</div>
-				<div class="col-md-6">
-					<form action="#" class="bg-light p-5 contact-form">
-						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Tambah Data Tipe kamar baru"></textarea>
-						</div>
-						<div class="form-group">
-						<input type="submit" value="Simpan" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
+	@auth
+		<section class="ftco-counter services-section bg-light" id="section-counter">
+			<div class="container">
+				<div class="row d-flex py-4">
+					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
+						<h2 class="mb-4">Ubah Deskripsi Harga Kamar</h2>
+						<p>
+							Perbarui Deskripsi Harga Kamar di <b>Woponta Ntu Homestay</b>.
+						</p>
+						<p>
+							Memastikan memasukkan data tarif harga untuk biaya inap permalamnya.
+							Silahkan ubah dan perbarui deskripsi untuk tarif inap kamar.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<form action="{{route('update_info')}}" method="post" onsubmit="#">
+							@csrf
+							<div class="form-group">
+								<textarea name="info" id="" cols="30" rows="10" class="form-control" placeholder="Tambah Data Tipe kamar baru"></textarea>
+							</div>
+							<input type="hidden" name="tag" value="harga">
+							<div class="form-group">
+							<input type="submit" value="Simpan" class="btn btn-primary py-3 px-5">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>		
+	@endauth
+
+	
 
 
     <section class="ftco-counter img" id="section-counter">
@@ -56,10 +62,7 @@
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
 							<h2 class="mb-4 text-uppercase">Tarif Kamar Yang Fleksibel</h2>
-							<p class="text-justify">Liburan bareng sahabat / keluarga itu luar biasa menyenangkan apa lagi bila 
-								kita bisa menemukan <b>homestay</b> yang harganya tepat dan sudah pasti nyaman.
-								Tarif yang sesuai untuk kamu yang mau <b>sendiri atau bersama teman/keluarga</b>.
-								Bermalam di <b>Woponta Ntu Homestay</b> tarif dapat menyesuaikan dengan keinginan kamu.
+							<p class="text-justify" style="white-space: pre-wrap;">{{$info->info}}
 							</p>
 						</div>
 					</div>
