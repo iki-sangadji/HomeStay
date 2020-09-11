@@ -40,11 +40,14 @@ Route::get('/fasilitasKamar', function () {
     return view('kamar.fasilitasKamar');
 })->name('fasilitasKamar');
 
-// 
+// end kelola kamar
 
+// Galeri Objek Wisata [CRUD] 
 Route::get('/galeri',function(){
-    return view('pages.galeri');
+    return view('galeri.galeri');
 })->name('galeri');
+
+// end Galeri
 
 Route::get('/profil',function(){
     return view('pages.profil');
