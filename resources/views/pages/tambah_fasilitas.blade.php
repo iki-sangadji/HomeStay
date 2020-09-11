@@ -1,5 +1,5 @@
 @extends('layouts.master')
-<title>Tambah Paket Trip Wisata</title>
+<title>Tambah Fasilitas</title>
 @section('content')
  {{--  Projek With K 2020 --}}
     
@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-center pb-4">
                 <div class="col-md-12 heading-section text-center ftco-animate">
-                    <h2 class="mb-4 tekstengahbawah">Tambah Paket Wisata</h2>
+                    <h2 class="mb-4 tekstengahbawah">Tambah Fasilitas</h2>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
           <div class="block-9">
             <div class="card">
                 <div class="card-header bg-primary">
-                    <h3 class="text-light text-center"><b>Tambah Paket Trip Wisata</b></h3>
+                    <h3 class="text-light text-center"><b>Tambah Fasilitas</b></h3>
                 </div>
             
                 <div class="order-md-last d-flex">

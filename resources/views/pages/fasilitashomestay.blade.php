@@ -1,6 +1,7 @@
 @extends('layouts.master')
 <title>Fasilitas</title>
 @section('content')
+ {{--  Projek With K 2020 --}}
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('Pulau Banoz.jpg') }}');" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -16,6 +17,11 @@
         <div class="container">
           <div class="row d-flex">
             <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
+
+                <a href="{{route('tambah_fasilitas')}}" class="btn btn-success">Tambah Fasilitas</a>
+                <a href="#" class="btn btn-danger">Hapus Fasilitas</a>
+                <a href="{{route('ubah_fasilitas')}}" class="btn btn-info">Ubah Fasilitas</a>
+
                 <h2 class="mb-4">Fasilitas di Manta Homestay meliputi:</h2>
                 <ul>
                     <li>1 Barracks (3 rooms)</li>

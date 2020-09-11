@@ -75,9 +75,21 @@ Route::get('/tambah_paket_wisata', function () {
     return view('pages.tambah_paket_wisata');
 })->name('tambah_paket_wisata');
 
+Route::get('/edit_paket_wisata', function () {
+    return view('pages.edit_paket_wisata');
+})->name('edit_paket_wisata');
+
 Route::get('/fasilitashomestay', function () {
     return view('pages.fasilitashomestay');
 })->name('fasilitashomestay');
+
+Route::get('/ubah_fasilitas', function () {
+    return view('pages.ubah_fasilitas');
+})->name('ubah_fasilitas');
+
+Route::get('/tambah_fasilitas', function () {
+    return view('pages.tambah_fasilitas');
+})->name('tambah_fasilitas');
 
 Auth::routes();
 
