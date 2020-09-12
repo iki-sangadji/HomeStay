@@ -74,7 +74,7 @@
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
 							<h2 class="mb-4 text-uppercase">Tarif Kamar Yang Fleksibel</h2>
-							<p class="text-justify" style="white-space: pre-wrap;">{{$info->info}}
+							<p class="text-justify" style="white-space: pre-wrap;">{!! nl2br($info->info)!!}
 							</p>
 						</div>
 					</div>
