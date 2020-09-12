@@ -67,6 +67,7 @@ Route::get('/kontak', function () {
     return view('pages.kontak');
 })->name('kontak');
 
+// paket Wisata
 Route::get('/paketwisata', function () {
     return view('pages.paketwisata');
 })->name('paketwisata');
@@ -78,7 +79,9 @@ Route::get('/tambah_paket_wisata', function () {
 Route::get('/edit_paket_wisata', function () {
     return view('pages.edit_paket_wisata');
 })->name('edit_paket_wisata');
+//end paket Wisata
 
+// destinasi
 Route::get('/ubah_destinasi', function () {
     return view('pages.ubah_destinasi');
 })->name('ubah_destinasi');
@@ -86,7 +89,9 @@ Route::get('/ubah_destinasi', function () {
 Route::get('/tambah_destinasi', function () {
     return view('pages.tambah_destinasi');
 })->name('tambah_destinasi');
+//end destinasi
 
+// fasilitas homestay
 Route::get('/fasilitashomestay', function () {
     return view('pages.fasilitashomestay');
 })->name('fasilitashomestay');
@@ -98,6 +103,7 @@ Route::get('/ubah_fasilitas', function () {
 Route::get('/tambah_fasilitas', function () {
     return view('pages.tambah_fasilitas');
 })->name('tambah_fasilitas');
+//end fasilitas homestay
 
 Auth::routes();
 
