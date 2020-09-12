@@ -16,15 +16,6 @@
 				@endif
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4 tekstengahbawah">Fasilitas Kamar</h2>
-				</div>
-				@if (session('message'))
-				<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
-					<p class="text-success">{{session('message')}}</p>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				@endif
 			</div>
 		</div>
 	</section>
