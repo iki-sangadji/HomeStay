@@ -19,7 +19,8 @@
             <div class="col-md-12 heading-section text-center ftco-animate">
                 
                 <h2 class="mb-4">Paket Trip Wisata</h2>
-                <a href="{{route('tambah_paket_wisata')}}" class="btn btn-success">Tambah Paket Trip Wisata</a>
+                <a href="{{route('tambah_paket_wisata')}}" class="btn btn-success">Tambah Trip</a>
+                
                 <hr>
             </div>
             <div class="col-md-12 heading-section text-center ftco-animate">
@@ -27,8 +28,8 @@
                 <p>Trip ke <b>1</b>  hanya sekali jalan untuk beberapa tempat wisata.
                     <br> Tarif trip sekali jalan : <b> 4.000.000</b>
                 </p> 
-                    <a href="#" class="btn btn-danger">Hapus Paket</a>
-                    <a href="{{route('edit_paket_wisata')}}" class="btn btn-info">Ubah Paket</a>
+                <a href="#" class="btn btn-danger">Hapus Trip</a>
+                <a href="{{route('edit_paket_wisata')}}" class="btn btn-info">Ubah Trip</a>
             </div>
             </div>
             <div class="row">
@@ -41,6 +42,12 @@
                             </div>
                         </a>
                     </div>
+                    <div align="center">
+                        <a href="{{route('tambah_destinasi')}}" class="btn btn-success m-2">Tambah Destinasi</a>
+                        <a href="#" class="btn btn-danger m-2">Hapus Destinasi</a>
+                        <a href="{{route('ubah_destinasi')}}" class="btn btn-info m-2">Ubah Destinasi</a>
+                    </div>
+                    
                 </div>
                 <div class="col-md-3 ftco-animate mb-4">
                     <div class="project-destination">
@@ -81,8 +88,7 @@
                             </div>
                         </a>
                     </div>
-                </div>           
-                
+                </div>   
             </div>
             <hr>
         </div>

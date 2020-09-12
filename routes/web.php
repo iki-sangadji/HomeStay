@@ -77,6 +77,14 @@ Route::get('/edit_paket_wisata', function () {
     return view('pages.edit_paket_wisata');
 })->name('edit_paket_wisata');
 
+Route::get('/ubah_destinasi', function () {
+    return view('pages.ubah_destinasi');
+})->name('ubah_destinasi');
+
+Route::get('/tambah_destinasi', function () {
+    return view('pages.tambah_destinasi');
+})->name('tambah_destinasi');
+
 Route::get('/fasilitashomestay', function () {
     return view('pages.fasilitashomestay');
 })->name('fasilitashomestay');
