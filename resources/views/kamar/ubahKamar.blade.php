@@ -15,25 +15,20 @@
 
     <section class="ftco-counter img" id="section-counter">
 		<div class="container">
-            <div class="row ftco-animate justify-content-center pb-4">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Perbarui Detail Kamar</h2>
-				</div>
-			</div>
 			<div class="row d-flex ftco-animate">
 				<div class="col-md-6 d-flex">
-					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/frontside_woponta_ntu.jpeg')}});"></div>
+					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('storage/'.$kamar->gambar)}});"></div>
 				</div>
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Form Perbarui Data Kamar</h2>
-							<form method="POST" action="" enctype="multipart/form-data" class="bg-light p-5 contact-form">
+							<h2 class="mb-4 text-uppercase">Form Perbarui Data Tipe Kamar</h2>
+							<form method="POST" action="{{route('update_kamar',$kamar->id_kamar)}}" enctype="multipart/form-data" class="bg-light p-5 contact-form">
                             @csrf
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="name" class="form-control" id="inputEmail3">
+                                        <input type="text" name="nama" value="{{$kamar->nama}}" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -46,9 +41,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputdesk3" class="col-sm-2 col-form-label">Desk.</label>
+                                    <label for="inputdesk3" class="col-sm-2 col-form-label">Deskripsi</label>
                                     <div class="col-sm-10">
-                                        <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Pebarui Data Kamar"></textarea>
+                                        <textarea name="deskripsi" id="" cols="30" rows="7" class="form-control" placeholder="Pebarui Data Kamar">{{$kamar->deskripsi}}</textarea>
                                     </div>
                                 </div>
                                 

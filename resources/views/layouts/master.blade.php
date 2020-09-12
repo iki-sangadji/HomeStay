@@ -37,16 +37,16 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
             
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Kamar
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="{{route('detailKamar')}}">Detail</a>
-                <a class="dropdown-item" href="{{route('fasilitasKamar')}}">Fasilitas</a>
-                <a class="dropdown-item" href="{{route('hargaKamar')}}">Harga</a>
+                <a class="dropdown-item" href="{{route('index_kamar')}}">Detail</a>
+                <a class="dropdown-item" href="{{route('fasilitas_kamar')}}">Fasilitas</a>
+                <a class="dropdown-item" href="{{route('harga_kamar')}}">Harga</a>
               </div>
             </li>
 
@@ -59,7 +59,16 @@
           </ul>
           
         </div>
-       
+       @auth
+        <div class="p-2 bd-highlight ml-4">
+          <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-danger rounded-pill">
+            <i class="zmdi zmdi-power"></i>Keluar
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              {{ csrf_field() }}
+          </form>                     
+        </div>
+       @endauth
         
 	    </div>
 	  </nav>
@@ -81,25 +90,23 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Vacation</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <h2 class="ftco-heading-2">Woponta Ntu Homestay</h2>
+              <p>Memberikan rasa aman dan nyaman. Pengalaman tak terlupakan.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-twitter"></i></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-facebook"></i></a></li>
+                <li class="ftco-animate"><a href="#"><i class="icon-instagram"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Infromation</h2>
+              <h2 class="ftco-heading-2">Informasi</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
-                <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-                <li><a href="#" class="py-2 d-block">Call Us</a></li>
+                <li><a href="{{route('detailKamar')}}" class="py-2 d-block">Detail Kamar</a></li>
+                <li><a href="{{route('fasilitasKamar')}}" class="py-2 d-block">Fasilitas Kamar</a></li>
+                <li><a href="{{route('hargaKamar')}}" class="py-2 d-block">Harga Kamar</a></li>
+                <li><a href="{{route('galeri')}}" class="py-2 d-block">Geleri Wisata</a></li>
               </ul>
             </div>
           </div>

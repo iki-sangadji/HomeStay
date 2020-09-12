@@ -61,6 +61,8 @@ Route::get('/profil',function(){
     return view('pages.profil');
 })->name('profil');
 
+
+
 Route::get('/kontak', function () {
     return view('pages.kontak');
 })->name('kontak');
@@ -99,3 +101,15 @@ Route::get('/tambah_fasilitas', function () {
 
 Auth::routes();
 
+//Kamar
+Route::get('/harga-kamar','InfoController@harga')->name('harga_kamar');
+Route::post('/update-harga-kamar','InfoController@updateInfo')->name('update_info');
+Route::get('/fasilitas-kamar','FasilitasKamarController@index')->name('fasilitas_kamar');
+Route::post('/store-kamar','FasilitasKamarController@store')->name('store_fasilitas_kamar');
+Route::post('/update-kamar/{id}','FasilitasKamarController@update')->name('update_fasilitas_kamar');
+Route::get('/delete-kamar/{id}','FasilitasKamarController@destroy')->name('delete_fasilitas_kamar');
+Route::get('/kamar','KamarController@index')->name('index_kamar');
+Route::post('/kamar/store','KamarController@store')->name('store_kamar');
+Route::get('/kamar/edit-kamar/{id}','KamarController@edit')->name('edit_kamar');
+Route::post('/kamar/update-kamar/{id}','KamarController@update')->name('update_kamar');
+Route::get('/kamar/delete-kamar/{id}','KamarController@destroy')->name('delete_kamar');
