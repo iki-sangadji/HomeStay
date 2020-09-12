@@ -44,7 +44,7 @@
 {{ $salutation }}
 @else
 @lang('Dari'),<br>
-Mega Futsal
+Woponta Ntun Homestay
 @endif
 
 {{-- Subcopy --}}
