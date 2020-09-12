@@ -119,3 +119,9 @@ Route::post('/kamar/store','KamarController@store')->name('store_kamar');
 Route::get('/kamar/edit-kamar/{id}','KamarController@edit')->name('edit_kamar');
 Route::post('/kamar/update-kamar/{id}','KamarController@update')->name('update_kamar');
 Route::get('/kamar/delete-kamar/{id}','KamarController@destroy')->name('delete_kamar');
+
+//Fasilitas home stay
+Route::get('/fasilitas-home-stay','FasilitasHomeStayController@index')->name('fasilitas_home_stay');
+Route::post('/store-home-stay','FasilitasHomeStayController@store')->name('store_fasilitas_home_stay');
+Route::post('/update-home-stay/{id}','FasilitasHomeStayController@update')->name('update_fasilitas_home_stay');
+Route::get('/delete-home-stay/{id}','FasilitasHomeStayController@destroy')->name('delete_fasilitas_home_stay');

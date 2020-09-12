@@ -6,6 +6,14 @@
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/view_from_woponta_ntu.jpeg') }}');" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row justify-content-center pb-4">
+				@if (session('message'))
+				<div class="alert alert-success alert-dismissible fade show " role="alert" style="margin-top: 70px">
+					<p class="text-success">{{session('message')}}</p>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				@endif
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4 tekstengahbawah">Harga Kamar</h2>
 				</div>
@@ -39,7 +47,7 @@
 						<form action="{{route('update_info')}}" method="post" onsubmit="#">
 							@csrf
 							<div class="form-group">
-								<textarea name="info" id="" cols="30" rows="10" class="form-control" placeholder="Tambah Data Tipe kamar baru"></textarea>
+								<textarea name="info" id="" cols="30" rows="10" class="form-control" style="white-space: pre-wrap;">{{$info->info}}</textarea>
 							</div>
 							<input type="hidden" name="tag" value="harga">
 							<div class="form-group">
