@@ -63,7 +63,7 @@ class KamarController extends Controller
             $kamar->gambar=$request->image->store('uploads','public');
         }
         $kamar->save();
-        return redirect('/kamar')->with('message','Kamar berhasil diubah');
+        return redirect('/kamar')->with('message','Kamar berhasil diperbarui');
     }
     public function destroy($id)
     {

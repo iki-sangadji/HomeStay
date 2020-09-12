@@ -9,6 +9,14 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4 tekstengahbawah">Fasilitas Kamar</h2>
 				</div>
+				@if (session('message'))
+				<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
+					<p class="text-success">{{session('message')}}</p>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				@endif
 			</div>
 		</div>
 	</section>
@@ -43,19 +51,11 @@
 	
 		<section class="ftco-counter services-section bg-light" id="section-counter">
 			<div class="container">
-					@if (session('message'))
-					<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
-						<p class="text-success">{{session('message')}}</p>
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					@endif
 				<div class="row d-flex">
 					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
 						<h2 class="mb-4">Kelola Fasilitas Kamar</h2>
 						<p>
-							Atur fasilitas pada kamar <b>Woponta Ntu Homestay</b>.
+							Atur fasilitas pada kamar <b>Woponta Ntun Homestay</b>.
 						</p>
 						<p>
 							Memastikan memasukkan data fasilitas yang akan didapat pada setiap kamar.

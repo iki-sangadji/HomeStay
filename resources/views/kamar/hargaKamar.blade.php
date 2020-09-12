@@ -9,6 +9,14 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4 tekstengahbawah">Harga Kamar</h2>
 				</div>
+				@if (session('message'))
+				<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
+					<p class="text-success">{{session('message')}}</p>
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				@endif 
 			</div>
 		</div>
 	</section>
@@ -20,7 +28,7 @@
 					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
 						<h2 class="mb-4">Ubah Deskripsi Harga Kamar</h2>
 						<p>
-							Perbarui Deskripsi Harga Kamar di <b>Woponta Ntu Homestay</b>.
+							Perbarui Deskripsi Harga Kamar di <b>Woponta Ntun Homestay</b>.
 						</p>
 						<p>
 							Memastikan memasukkan data tarif harga untuk biaya inap permalamnya.

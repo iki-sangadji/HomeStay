@@ -24,7 +24,7 @@ class InfoController extends Controller
         $infoModel=Info::where('tag','=',$tag)->first();
         $infoModel->info=$request->input('info');
         $infoModel->save();
-        return back()->with('message','Berhasil Perbarui');
+        return back()->with('message','Tarif Kamar Berhasil DiPerbarui');
     }
 
     /**
