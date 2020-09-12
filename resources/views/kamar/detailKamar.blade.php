@@ -81,8 +81,8 @@
 						<img src="{{asset('storage/'.$row->gambar)}}" class="img-fluid" alt="Tipe Kamar Woponta Ntun" style="width:100%; height:500px !important;">
 						<div class="card-body">
 							<h5 class="card-title">{{$row->nama}}</h5>
-							<p class="" style="white-space: pre-wrap;">
-								{{$row->deskripsi}}
+							<p class="card-text" style="white-spac; pre-wrap;">
+								{!!  nl2br($row->deskripsi)!!}
 							</p>
 						</div>
 						@auth

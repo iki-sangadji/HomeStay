@@ -78,17 +78,15 @@
                 </div>
                 <div class="col-md-3 ftco-animate mb-4">
                     <div class="project-destination">
-                        <a href="#" class="img" style="background-image: url('{{ asset('Batu Pensil.jpg') }}');">
-                            <div class="text">
-                                <h3>Batu Pensil</h3>
-                                <span>5</span>
+                        <a href="#" class="img" style="background-color: grey">
+                            <div class="text" align="center">
+                                <h3 class="fa fa-plus"  style="margin-top: 50%"> Tambah</h3>
                             </div>
                         </a>
                     </div>
                 </div>   
-                <div class="col-md-3 ftco-animate mb-4">
-                    <a href="{{route('tambah_destinasi')}}" class="fa fa-plus btn btn-success m-2"> Tambah Destinasi</a>
-                </div>
+                
+                
             </div>
             <hr>
         </div>
