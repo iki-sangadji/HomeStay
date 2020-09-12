@@ -68,12 +68,12 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h2 class="mb-4 text-uppercase">Spot Baru</h2>
                             
-                            <form method="POST" action="" enctype="multipart/form-data" class="bg-light p-5 contact-form">
+                            <form method="POST" action="{{route("store_galeri")}}" enctype="multipart/form-data" class="bg-light p-5 contact-form">
                             @csrf
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="name" class="form-control" id="inputEmail3">
+                                        <input type="text" name="nama" class="form-control" id="inputEmail3">
                                     </div>
                                 </div>
                                 <div class="form-group row">

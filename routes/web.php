@@ -42,10 +42,7 @@ Route::get('/fasilitasKamar', function () {
 
 // end kelola kamar
 
-// Galeri Objek Wisata [CRUD] 
-Route::get('/galeri',function(){
-    return view('galeri.galeri');
-})->name('galeri');
+
 
 Route::get('/tambahSpot',function(){
     return view('galeri.tambahSpot');
@@ -125,3 +122,9 @@ Route::get('/fasilitas-home-stay','FasilitasHomeStayController@index')->name('fa
 Route::post('/store-home-stay','FasilitasHomeStayController@store')->name('store_fasilitas_home_stay');
 Route::post('/update-home-stay/{id}','FasilitasHomeStayController@update')->name('update_fasilitas_home_stay');
 Route::get('/delete-home-stay/{id}','FasilitasHomeStayController@destroy')->name('delete_fasilitas_home_stay');
+//Galri
+Route::get('/galeri','GaleriController@index')->name('galeri');
+Route::post('/store-galeri','GaleriController@store')->name('store_galeri');
+Route::get('/edit-galeri/{id}','GaleriController@edit')->name('edit_galeri');
+Route::post('/update-galeri/{id}','GaleriController@update')->name('update_galeri');
+Route::get('/delete-galeri/{id}','GaleriController@destroy')->name('delete_galeri');
