@@ -18,14 +18,7 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4 tekstengahbawah">Detail Kamar</h2>
 				</div>
-				@if (session('message'))
-				<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
-					<p class="text-success">{{session('message')}}</p>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				@endif 
+				
 			</div>
 		</div>
 	</section>
@@ -88,7 +81,7 @@
 						<img src="{{asset('storage/'.$row->gambar)}}" class="img-fluid" alt="Tipe Kamar Woponta Ntun" style="width:100%; height:500px !important;">
 						<div class="card-body">
 							<h5 class="card-title">{{$row->nama}}</h5>
-							<p class="card-text" style="white-space: pre-wrap;">
+							<p class="" style="white-space: pre-wrap;">
 								{{$row->deskripsi}}
 							</p>
 						</div>
