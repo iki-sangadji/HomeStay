@@ -3,14 +3,6 @@
 @section('content')
 {{--  Projek With K 2020 --}}
  
-	@if (session('message'))
-	<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
-		<p class="text-success">{{session('message')}}</p>
-		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-	</div>
-	@endif
     <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('images/upside_woponta_ntu.jpeg') }}');" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row justify-content-center pb-4">
@@ -22,7 +14,7 @@
 	</section>
 	
 	@auth
-		<section class="ftco-section">
+		<section class="ftco-section ftco-no-pt">
 			<div class="container">
 				<div class="row d-flex justify-content-between mt-5 search-wrap-1 ftco-animate p-4">
 					<div class="col-md-6">
@@ -51,6 +43,14 @@
 	
 		<section class="ftco-counter services-section bg-light" id="section-counter">
 			<div class="container">
+					@if (session('message'))
+					<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
+						<p class="text-success">{{session('message')}}</p>
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					@endif
 				<div class="row d-flex">
 					<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
 						<h2 class="mb-4">Kelola Fasilitas Kamar</h2>
@@ -121,7 +121,7 @@
 			</div>
 		</section>
 	@endauth
-	<section class="ftco-counter img mb-4" id="section-counter">
+	<section class="ftco-counter img my-4 p-4" id="section-counter">
 		<div class="container">
 			<div class="row d-flex ftco-animate">
 				<div class="col-md-6 d-flex">

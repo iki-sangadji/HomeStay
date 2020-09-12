@@ -49,12 +49,8 @@
 
     <section class="ftco-counter img" id="section-counter">
 		<div class="container">
-			<div class="row justify-content-center p-4">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Tarif Bermalam</h2>
-				</div>
-			</div>
-			<div class="row d-flex ftco-animate mb-4">
+			
+			<div class="row d-flex ftco-animate p-4">
 				<div class="col-md-6 d-flex">
 					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/wall_woponta_ntu.jpeg')}});"></div>
 				</div>
@@ -197,7 +193,4 @@
             </div>
 		</div>
     </section> --}}
-    
-
-
 @endsection
