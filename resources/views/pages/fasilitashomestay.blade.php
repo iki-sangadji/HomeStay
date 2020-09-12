@@ -24,7 +24,7 @@
 						<div class="input-group mb-3">
 							<input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
 							<div class="input-group-prepend">
-								<button class="btn btn-lg btn-primary text-center rounded-lg rounded-right" type="button" id="button-addon1">
+								<button onclick="location.href='{{route('tambah_fasilitas')}}'" class="btn btn-lg btn-primary text-center rounded-lg rounded-right" type="button" id="button-addon1">
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
 										<path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
@@ -43,13 +43,13 @@
 		<div class="container">
 			<div class="row d-flex">
 				<div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
-					<h2 class="mb-4">Kelola Fasilitas Kamar</h2>
+					<h2 class="mb-4">Kelola Fasilitas Homestay</h2>
 					<p>
-						Atur fasilitas pada kamar <b>Woponta Ntu Homestay</b>.
+						Atur fasilitas <b>Woponta Ntun Homestay</b>.
 					</p>
 					<p>
-						Memastikan memasukkan data fasilitas yang akan didapat pada setiap kamar.
-						Silahkan ubah, tambah, dan hapus fasilitas kamar.
+						Memastikan memasukkan data fasilitas yanng ada pada Woponta Ntun Homestay.
+						Silahkan ubah, tambah, dan hapus fasilitas.
 					</p>
 				</div>
 				<div class="col-md-6">
@@ -58,7 +58,7 @@
 							<thead>
 								<tr class="bg-primary text-dark">
 									<th scope="col">Fasilitas</th>
-									<th scope="col" colspan="2">Aksi Fasilitas Kamar</th>
+									<th scope="col" colspan="2">Aksi Fasilitas</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -69,13 +69,13 @@
 									</td>
 									<td>
 										<a href="#">
-											<button type="submit" class="btn btn-primary">
+											<button onclick="location.href='{{route('ubah_fasilitas')}}'" type="submit" class="btn btn-primary">
 												<span class="align-middle">
 													<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 													<path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
 													<path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
 													</svg>
-													Edit
+													Ubah
 												</span>
 											</button>
 										</a>
@@ -174,19 +174,14 @@
 
 	<section class="ftco-counter img mb-4" id="section-counter">
 		<div class="container">
-			<div class="row justify-content-center p-4">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Fasilitas Kami</h2>
-				</div>
-			</div>
-			<div class="row d-flex ftco-animate">
+			<div class="row d-flex ftco-animate mt-4">
 				<div class="col-md-6 d-flex">
 					<div class="img d-flex align-self-stretch" style="background-image:url({{asset('images/frontside_woponta_ntu.jpeg')}});"></div>
 				</div>
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Menambah kenyamanan Anda, Tersedia :</h2>
+							<h2 class="mb-4 text-uppercase">Fasilistas yang ada pada Woponta Ntun Homestay :</h2>
 							<p class="text-justify">
 								Fan	<br>
 								Hammock <br>

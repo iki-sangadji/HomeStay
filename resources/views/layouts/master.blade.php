@@ -92,11 +92,7 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Woponta Ntu Homestay</h2>
               <p>Memberikan rasa aman dan nyaman. Pengalaman tak terlupakan.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><i class="icon-twitter"></i></a></li>
-                <li class="ftco-animate"><a href="#"><i class="icon-facebook"></i></a></li>
-                <li class="ftco-animate"><a href="#"><i class="icon-instagram"></i></a></li>
-              </ul>
+              
             </div>
           </div>
           <div class="col-md">
@@ -115,7 +111,11 @@
               <h2 class="ftco-heading-2">Navigasi</h2>
               <ul class="list-unstyled">
                 <li><a href="{{route('beranda')}}" class="py-2 d-block">Beranda</a></li>
+                <li><a href="{{route('galeri')}}" class="py-2 d-block">Galeri</a></li>
+                <li><a href="{{route('profil')}}" class="py-2 d-block">Profil</a></li>
+                <li><a href="{{route('fasilitashomestay')}}" class="py-2 d-block">Fasilitas</a></li>
                 <li><a href="{{route('kontak')}}" class="py-2 d-block">Kontak</a></li>
+                <li><a href="{{route('paketwisata')}}" class="py-2 d-block">Paket Wisata</a></li>
               </ul>
             </div>
           </div>
