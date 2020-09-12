@@ -37,7 +37,7 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
+            <li class="nav-item {{ Request::is('/') ? 'active' : '' }}"><a href="{{route('beranda')}}" class="nav-link">Beranda</a></li>
             
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,11 +50,11 @@
               </div>
             </li>
 
-	          <li class="nav-item"><a href="{{route('galeri')}}" class="nav-link">Galeri</a></li>
-            <li class="nav-item"><a href="{{route('profil')}}" class="nav-link">Profil</a></li>
-            <li class="nav-item"><a href="{{route('fasilitashomestay')}}" class="nav-link">Fasilitas</a></li>
-	          <li class="nav-item"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
-	          <li class="nav-item cta"><a href="{{route('paketwisata')}}" class="nav-link">Paket Wisata</a></li>
+	          <li class="nav-item {{ Request::is('galeri') ? 'active' : '' }}"><a href="{{route('galeri')}}" class="nav-link">Galeri</a></li>
+            <li class="nav-item {{ Request::is('profil') ? 'active' : '' }}"><a href="{{route('profil')}}" class="nav-link">Profil</a></li>
+            <li class="nav-item {{ Request::is('fasilitashomestay') ? 'active' : '' }}"><a href="{{route('fasilitas_home_stay')}}" class="nav-link">Fasilitas</a></li>
+	          <li class="nav-item {{ Request::is('kontak') ? 'active' : '' }}"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
+	          <li class="nav-item cta "><a href="{{route('paketwisata')}}" class="nav-link">Paket Wisata</a></li>
 
           </ul>
           
