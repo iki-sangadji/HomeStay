@@ -38,16 +38,13 @@
                         <a href="#" class="img" style="background-image: url('{{ asset('Pulau Banoz.jpg') }}');">
                             <div class="text">
                                 <h3>Pulau Banoz</h3>
+                                <button href="#" class="fa fa-trash btn btn-danger btn-sm"> Hapus</button>
+                                <button href="{{route('ubah_destinasi')}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</button> 
                                 <span>1</span>
                             </div>
                         </a>
                     </div>
-                    <div align="center">
-                        <a href="{{route('tambah_destinasi')}}" class="btn btn-success m-2">Tambah Destinasi</a>
-                        <a href="#" class="btn btn-danger m-2">Hapus Destinasi</a>
-                        <a href="{{route('ubah_destinasi')}}" class="btn btn-info m-2">Ubah Destinasi</a>
-                    </div>
-                    
+                                          
                 </div>
                 <div class="col-md-3 ftco-animate mb-4">
                     <div class="project-destination">
@@ -89,6 +86,9 @@
                         </a>
                     </div>
                 </div>   
+                <div class="col-md-3 ftco-animate mb-4">
+                    <a href="{{route('tambah_destinasi')}}" class="fa fa-plus btn btn-success m-2"> Tambah Destinasi</a>
+                </div>
             </div>
             <hr>
         </div>

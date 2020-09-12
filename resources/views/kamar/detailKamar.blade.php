@@ -22,7 +22,7 @@
 		</div>
 	</section>
 	
-	<section class="ftco-section">
+	<section class="ftco-section ftco-no-pt">
 		<div class="container">
 			<div class="d-flex justify-content-between mt-5 search-wrap-1 ftco-animate p-4">
 				<div>
@@ -50,7 +50,7 @@
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
 						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4 text-uppercase">Menjadikan tempat bermalam menjadi aman dan nyaman</h2>
+							<h2 class="mb-4">Bermalam Menjadi Aman dan Nyaman</h2>
 							<p class="text-justify">Liburan bareng sahabat / keluarga itu luar biasa menyenangkan apa lagi bila 
 								kita bisa menemukan <b>homestay</b> yang harganya tepat dan sudah pasti nyaman.
 								Pemandangan  dan suasana alam sekitar sudah pasti bisa di rasakan di 
@@ -66,6 +66,14 @@
 
 	<section class="ftco-section">
 		<div class="container">
+			@if (session('message'))
+			<div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 70px">
+				<p class="text-success">{{session('message')}}</p>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			@endif 	
 			<div class="row ftco-animate justify-content-center pb-4">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h2 class="mb-4">Detail Kamar</h2>
@@ -76,7 +84,7 @@
 			<div class="row">
 				@foreach ($kamarList as $row)
 				<div class="col-sm-6 ftco-animate">
-					<div class="card mb-3" style="height:50%">
+					<div class="card mb-3">
 						<img src="{{asset('storage/'.$row->gambar)}}" class="img-fluid" alt="Tipe Kamar Woponta Ntu" style="width:100%; height:500px !important;">
 						<div class="card-body">
 							<h5 class="card-title">{{$row->nama}}</h5>
@@ -110,8 +118,8 @@
 										</span>
 									</button>
 								</form>
-							@endauth
-                  	  </div>
+                  	  		</div>
+						@endauth
 					</div>
 				</div>
 				@endforeach
