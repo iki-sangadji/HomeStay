@@ -22,12 +22,13 @@
                 </div>
             
                 <div class="order-md-last d-flex">
-                <form action="#" class="bg-light p-5 contact-form">
+                <form method="POST" action="{{route("update_wisata",$paket->id_paket)}}" class="bg-light p-5 contact-form">
+                    @csrf
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nama">
+                    <input type="text" class="form-control" value="{{$paket->nama}}">
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" min="0" placeholder="Harga">
+                        <input type="number" class="form-control" min="0" value="{{$paket->harga}}">
                     </div>
                     {{-- <div class="form-group">
                     <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>

@@ -22,17 +22,15 @@
                 </div>
             
                 <div class="order-md-last d-flex">
-                <form action="#" class="bg-light p-5 contact-form">
+                <form method="POST" action="{{route("store_trip",$id)}}" enctype="multipart/form-data" class="bg-light p-5 contact-form">
+                    @csrf
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nama">
+                    <input name="nama" type="text" class="form-control" placeholder="Nama">
                     </div>
                     <div class="input-group rounded-pill mb-3">
                         <div class="custom-file">
                             <input type="file" name="image" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" onchange="this.nextElementSibling.innerText = this.files[0].name">
                             <label class="custom-file-label" for="inputGroupFile04">Pilih File</label>
-                        </div>
-                        <div class="input-group-append">
-                            <button class="btn btn-info" id="inputGroupFileAddon04">Unggah</button>
                         </div>
                     </div>
 

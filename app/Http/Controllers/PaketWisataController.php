@@ -38,11 +38,11 @@ class PaketWisataController extends Controller
      */
     public function storePaket(Request $request)
     {
-        $paket= new Trip;
+        $paket= new PaketWisata;
         $paket->nama=$request->input('nama');
         $paket->harga=$request->input('harga');
         $paket->save();
-        return redirect("/paket_wisata")->with("message","Paket berhasil ditambah");
+        return redirect("/paket-wisata")->with("message","Paket berhasil ditambah");
     }
 
     public function storeTrip(Request $request, $id)
@@ -56,25 +56,25 @@ class PaketWisataController extends Controller
         }
         $trip->paket=$id;
         $trip->save();
-        return redirect("/paket_wisata")->with("message","Trip berhasil ditambah");
+        return redirect("/paket-wisata")->with("message","Trip berhasil ditambah");
     }
     
 
     
     public function editPaket($id)
     {
-        $paket=Paket::find($id);
+        $paket=PaketWisata::find($id);
         return view("pages.edit_paket_wisata")->with("paket",$paket);
     }
 
     
     public function updatePaket(Request $request, $id)
     {
-        $paket= Trip::find($id);
+        $paket= PaketWisata::find($id);
         $paket->nama=$request->input('nama');
         $paket->harga=$request->input('harga');
         $paket->save();
-        return redirect("/paket_wisata")->with("message","Paket berhasil diubah");
+        return redirect("/paket-wisata")->with("message","Paket berhasil diubah");
     }
 
 
@@ -94,7 +94,7 @@ class PaketWisataController extends Controller
         }
         $trip->paket=$id;
         $trip->save();
-        return redirect("/paket_wisata")->with("message","Trip berhasil diubah");
+        return redirect("/paket-wisata")->with("message","Trip berhasil diubah");
     }
     /**
      * Remove the specified resource from storage.
@@ -102,8 +102,16 @@ class PaketWisataController extends Controller
      * @param  \App\PaketWisata  $paketWisata
      * @return \Illuminate\Http\Response
      */
-    public function destroy(PaketWisata $paketWisata)
+    public function destroyPaket($id)
     {
-        //
+        $paket=PaketWisata::find($id);
+        $paket->delete();
+        return redirect("/paket-wisata")->with("message","Paket berhasil dihapus");
+    }
+    public function destroyTrip($id)
+    {
+        $trip=Trip::find($id);
+        $trip->delete();
+        return redirect("/paket-wisata")->with("message","Trip berhasil dihapus");
     }
 }

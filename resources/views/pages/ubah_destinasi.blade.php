@@ -22,7 +22,7 @@
                 </div>
             
                 <div class="order-md-last d-flex">
-                <form action="#" class="bg-light p-5 contact-form">
+                <form method="POST" action="{{route("update_trip",$id)}}" enctype="multipart/form-data" class="bg-light p-5 contact-form">
                     <div class="form-group">
                     <input type="text" class="form-control" placeholder="Nama">
                     </div>
