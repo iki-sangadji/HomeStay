@@ -128,3 +128,16 @@ Route::post('/store-galeri','GaleriController@store')->name('store_galeri');
 Route::get('/edit-galeri/{id}','GaleriController@edit')->name('edit_galeri');
 Route::post('/update-galeri/{id}','GaleriController@update')->name('update_galeri');
 Route::get('/delete-galeri/{id}','GaleriController@destroy')->name('delete_galeri');
+
+//Paket Wisata
+Route::get('/paket-wisata','PaketWisataController@index')->name('paket_wisata');
+Route::post('/store-paket','PaketWisataController@storePaket')->name('store_wisata');
+Route::get('/edit-paket/{id}','PaketWisataController@editPaket')->name('edit_wisata');
+Route::post('/update-paket/{id}','PaketWisataController@updatePaket')->name('update_wisata');
+Route::get('/delete-paket/{id}','PaketWisataController@destroyPaket')->name('delete_wisata');
+//Trip
+ROute::get('/paket/{id}/tambah-trip','PaketWisataController@createTrip')->name('create_trip');
+Route::post('/paket/{id}/store-trip','PaketWisataController@storeTrip')->name('store_trip');
+Route::get('/edit-trip/{id}','PaketWisataController@editTrip')->name('edit_trip');
+Route::post('/update-trip/{id}','PaketWisataController@updateTrip')->name('update_trip');
+Route::get('/delete-trip/{id}','PaketWisataController@destroyTrip')->name('delete_trip');

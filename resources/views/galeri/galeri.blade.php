@@ -20,6 +20,7 @@
             </div>
         </div>
     </section>
+    @auth
     <section class="ftco-section">
 		<div class="container">
 			<div class="d-flex justify-content-between mt-5 search-wrap-1 ftco-animate p-4">
@@ -38,7 +39,7 @@
 			</div>
 		</div>
     </section>
-    
+    @endauth
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center pb-4">
@@ -57,6 +58,7 @@
                                 </div>
                             </a>
                         </div>
+                        @auth
                         <div class="mt-1 bg-white d-flex justify-content-end">
                             <a href="{{route('edit_galeri',$row->id_galeri)}}">
                                 <button class="btn btn-sm btn-primary mr-1">
@@ -83,6 +85,7 @@
                                 </button>
                             </form>
                         </div>
+                        @endauth
                     </div>
                 
             @endforeach
