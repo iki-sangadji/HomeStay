@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-md-3 ftco-animate mb-4">
                     <div class="project-destination">
-                        <a href="#" class="img" style="background-color: grey">
+                        <a href="{{route('tambah_destinasi')}}" class="img" style="background-color: grey">
                             <div class="text" align="center">
                                 <h3 class="fa fa-plus"  style="margin-top: 50%"> Tambah</h3>
                             </div>

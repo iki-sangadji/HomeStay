@@ -27,10 +27,7 @@
                     <input type="text" class="form-control" placeholder="Nama">
                     </div>
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Harga">
-                    </div>
-                    <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Gambar">
+                        <input type="number" class="form-control" min="0" placeholder="Harga">
                     </div>
                     {{-- <div class="form-group">
                     <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
