@@ -78,7 +78,7 @@
                                         <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_trip",$trip->id_trip)}}" method="DELETE" >
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE">
-                                            <button class="fa fa-trash btn btn-danger btn-sm" type="submit"> Hapus</button>
+                                            <button class="fa fa-trash btn btn-danger btn-sm mt-3" type="submit"> Hapus</button>
                                         </form>                                        
                                         <a href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</a> 
                                         @endauth

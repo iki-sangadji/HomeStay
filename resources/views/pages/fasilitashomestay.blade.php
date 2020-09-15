@@ -32,7 +32,7 @@
 					<form action="{{route('store_fasilitas_home_stay')}}" method="POST">
 						@csrf
 						<div class="input-group mb-3">
-							<input name="nama" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+							<input name="nama" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" required>
 							<div class="input-group-prepend">
 								<button class="btn btn-lg btn-primary text-center rounded-lg rounded-right" type="submit" id="button-addon1">
 									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
 											<form action="{{route('update_fasilitas_home_stay',$row->id_fasilitas)}}"  method="post" >
 												{{ csrf_field() }}
 											<td>
-												<input name="nama" type="text" class="form-control" value="{{$row->nama}}">
+												<input name="nama" type="text" class="form-control" value="{{$row->nama}}" required>
 											</td>
 											<td>
 												<a href="">
