@@ -74,20 +74,20 @@
                                                 
                                             </div>
                                         </a>
-                                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="#" method="DELETE" >
+                                        @auth
+                                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_trip",$trip->id_trip)}}" method="DELETE" >
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE">
                                             <button class="btn btn-danger btn-sm" type="submit"><i class="fa fa-trash"></i> Hapus</button>
                                         </form> 
-
-                                        
                                         <a href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</a> 
+                                        @endauth
                                     </div>           
                                 </div>
                                 @endif
                             @endforeach
                             
-                            
+                            @auth
                             <div class="col-md-3 ftco-animate mb-4">
                                 <div class="project-destination">
                                     <a href="{{route("create_trip",$paket->id_paket)}}" class="img" style="background-color: grey">
@@ -96,7 +96,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>   
+                            </div>
+                            @endauth   
                             
                             
                         </div>
