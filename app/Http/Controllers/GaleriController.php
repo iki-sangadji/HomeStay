@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class GaleriController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth', ['except'=>['index']]);
+        $this->middleware('auth', ['except'=>['index','home']]);
     }
     public function index()
     {
