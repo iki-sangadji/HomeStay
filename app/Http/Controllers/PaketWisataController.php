@@ -50,6 +50,9 @@ class PaketWisataController extends Controller
 
     public function storeTrip(Request $request, $id)
     {
+        $request->validate([
+            'image'=>'required|image',
+        ]);
         $trip= new Trip;
         $trip->nama=$request->input('nama');
         if($request->has('image')){
@@ -90,6 +93,9 @@ class PaketWisataController extends Controller
    
     public function updateTrip(Request $request, $id)
     {
+        $request->validate([
+            'image'=>'image',
+        ]);
         $trip= Trip::find($id);
         $trip->nama=$request->input('nama');
         if($request->has('image')){
