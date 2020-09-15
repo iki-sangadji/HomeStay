@@ -18,9 +18,7 @@ Route::get('/foo', function () {
     return redirect("/");
 });
 
-Route::get('/', function () {
-    return view('pages.beranda');
-})->name('beranda');
+Route::get('/','GaleriController@home')->name('beranda');
 
 // Kamar [fasilitas, harga, detail]
 
@@ -32,33 +30,13 @@ Route::get('/tambahKamar',function(){
     return view('kamar.tambahKamar');
 })->name('tambahKamar');
 
-Route::get('/ubahKamar',function(){
-    return view('kamar.ubahkamar');
-})->name('ubahKamar');
-
-
-Route::get('/hargaKamar', function () {
-    return view('kamar.hargaKamar');
-})->name('hargaKamar');
-
-Route::get('/fasilitasKamar', function () {
-    return view('kamar.fasilitasKamar');
-})->name('fasilitasKamar');
 
 // end kelola kamar
 
-
-
-Route::get('/tambahSpot',function(){
+// end Galeri
+Route::get('/tambah-galeri', function () {
     return view('galeri.tambahSpot');
 })->name('tambahSpot');
-
-Route::get('/ubahSpot',function(){
-    return view('galeri.ubahSpot');
-})->name('ubahSpot');
-
-// end Galeri
-
 Route::get('/profil',function(){
     return view('pages.profil');
 })->name('profil');
@@ -70,23 +48,12 @@ Route::get('/kontak', function () {
 })->name('kontak');
 
 // paket Wisata
-Route::get('/paketwisata', function () {
-    return view('pages.paketwisata');
-})->name('paketwisata');
 
 Route::get('/tambah_paket_wisata', function () {
     return view('pages.tambah_paket_wisata');
 })->name('tambah_paket_wisata');
 
-Route::get('/edit_paket_wisata', function () {
-    return view('pages.edit_paket_wisata');
-})->name('edit_paket_wisata');
-//end paket Wisata
 
-// destinasi
-Route::get('/ubah_destinasi', function () {
-    return view('pages.ubah_destinasi');
-})->name('ubah_destinasi');
 
 Route::get('/tambah_destinasi', function () {
     return view('pages.tambah_destinasi');
@@ -94,13 +61,7 @@ Route::get('/tambah_destinasi', function () {
 //end destinasi
 
 // fasilitas homestay
-Route::get('/fasilitashomestay', function () {
-    return view('pages.fasilitashomestay');
-})->name('fasilitashomestay');
 
-Route::get('/ubah_fasilitas', function () {
-    return view('pages.ubah_fasilitas');
-})->name('ubah_fasilitas');
 
 Route::get('/tambah_fasilitas', function () {
     return view('pages.tambah_fasilitas');

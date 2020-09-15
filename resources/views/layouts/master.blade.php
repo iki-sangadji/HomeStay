@@ -99,9 +99,9 @@
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Informasi</h2>
               <ul class="list-unstyled">
-                <li><a href="{{route('detailKamar')}}" class="py-2 d-block">Detail Kamar</a></li>
-                <li><a href="{{route('fasilitasKamar')}}" class="py-2 d-block">Fasilitas Kamar</a></li>
-                <li><a href="{{route('hargaKamar')}}" class="py-2 d-block">Harga Kamar</a></li>
+                <li><a href="{{route('index_kamar')}}" class="py-2 d-block">Detail Kamar</a></li>
+                <li><a href="{{route('fasilitas_kamar')}}" class="py-2 d-block">Fasilitas Kamar</a></li>
+                <li><a href="{{route('harga_kamar')}}" class="py-2 d-block">Harga Kamar</a></li>
                 <li><a href="{{route('galeri')}}" class="py-2 d-block">Geleri Wisata</a></li>
               </ul>
             </div>
@@ -113,9 +113,9 @@
                 <li><a href="{{route('beranda')}}" class="py-2 d-block">Beranda</a></li>
                 <li><a href="{{route('galeri')}}" class="py-2 d-block">Galeri</a></li>
                 <li><a href="{{route('profil')}}" class="py-2 d-block">Profil</a></li>
-                <li><a href="{{route('fasilitashomestay')}}" class="py-2 d-block">Fasilitas</a></li>
+                <li><a href="{{route('fasilitas_home_stay')}}" class="py-2 d-block">Fasilitas</a></li>
                 <li><a href="{{route('kontak')}}" class="py-2 d-block">Kontak</a></li>
-                <li><a href="{{route('paketwisata')}}" class="py-2 d-block">Paket Wisata</a></li>
+                <li><a href="{{route('paket_wisata')}}" class="py-2 d-block">Paket Wisata</a></li>
               </ul>
             </div>
           </div>

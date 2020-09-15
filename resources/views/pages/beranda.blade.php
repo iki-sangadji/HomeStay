@@ -30,7 +30,7 @@
             Air lautnya juga terlihat cantik dengan warna biru turquoise. Saking beningnya air laut di Pulau Misool, kamu bisa mudah melihat aneka kekayaaan alam di titik penyelamannya, 
             seperti berbagai jenis ikan, hiu, penyu, terumbu karang, dan lain-lain.
         </p>
-        <p><a href="{{route('paketwisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
+        <p><a href="{{route('paket_wisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
         </div>
         <div class="col-md-6">
         <div class="row">
@@ -106,61 +106,52 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 ftco-animate mb-4">
-                <div class="project-destination">
-                    <a href="#" class="img" style="background-image: url('{{ asset('Pulau Banoz.jpg') }}');">
-                        <div class="text">
-                            <h3>Pulau Banoz</h3>
-                            <span>1</span>
+            @foreach ($galeriList as $row)
+                
+                    <div class="col-md-3 ftco-animate mb-4">
+                        <div class="project-destination">
+                            <a href="#" class="img" style="background-image: url('{{asset('storage/'.$row->gambar)}}');">
+                                <div class="text">
+                                    <h3>{{$row->nama}}</h3>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <div class="project-destination">
-                    <a href="#" class="img" style="background-image: url('{{ asset('Tangga Seribu.jpg') }}');">
-                        <div class="text">
-                            <h3>Tangga Seribu</h3>
-                            <span>2</span>
+                        @auth
+                        <div class="mt-1 bg-white d-flex justify-content-end">
+                            <a href="{{route('edit_galeri',$row->id_galeri)}}">
+                                <button class="btn btn-sm btn-primary mr-1">
+                                    <span class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                        Edit
+                                    </span>
+                                </button>
+                            </a>
+                            <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route('delete_galeri',$row->id_galeri)}}" method="get" >
+                                {{ csrf_field() }}
+                                <input type="hidden" name="_method" value="DELETE">
+                                
+                                <button class="btn btn-primary btn-sm" type="submit"> 
+                                    <span class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                        </svg>
+                                        Hapus
+                                    </span>
+                                </button>
+                            </form>
                         </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <div class="project-destination">
-                    <a href="#" class="img" style="background-image: url('{{ asset('Goa Puteri Termenung.jpg') }}');">
-                        <div class="text">
-                            <h3>Goa Puteri Termenung</h3>
-                            <span>3</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <div class="project-destination">
-                    <a href="#" class="img" style="background-image: url('{{ asset('Danau Love.jpg') }}');">
-                        <div class="text">
-                            <h3>Danau Love</h3>
-                            <span>4</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <div class="project-destination">
-                    <a href="#" class="img" style="background-image: url('{{ asset('Batu Pensil.jpg') }}');">
-                        <div class="text">
-                            <h3>Batu Pensil</h3>
-                            <span>5</span>
-                        </div>
-                    </a>
-                </div>
-            </div>  
+                        @endauth
+                    </div>
+                
+            @endforeach
         </div>
     </div>
 </section>
 
-	<section class="ftco-section">
+	{{-- <section class="ftco-section">
 		<div class="container">
 			<div class="row ftco-animate justify-content-center pb-4">
 				<div class="col-md-12 heading-section text-center ftco-animate">
@@ -223,7 +214,7 @@
 					</div>
 				</div>
 			</div>
-			{{-- <hr> --}}
+			{{-- <hr> 
 		</div>
-	</section>
+	</section> --}}
 @endsection

@@ -16,6 +16,11 @@ class GaleriController extends Controller
         return view('galeri.galeri')->with('galeriList', $galeri);
     }
 
+    public function home()
+    {
+        $galeri=Galeri::all();
+        return view('pages.beranda')->with('galeriList', $galeri);
+    }
     /**
      * Show the form for creating a new resource.
      *
