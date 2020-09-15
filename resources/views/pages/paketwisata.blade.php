@@ -29,7 +29,9 @@
             <div class="col-md-12 heading-section text-center ftco-animate">
                 
                 <h2 class="mb-4">Paket Trip Wisata</h2>
-                <a href="{{route('tambah_paket_wisata')}}" class="fa fa-plus btn btn-success"> Tambah Trip</a>
+                @auth
+                    <a href="{{route('tambah_paket_wisata')}}" class="fa fa-plus btn btn-success"> Tambah Paket</a>
+                @endauth
                 
                 
             </div>
@@ -42,20 +44,22 @@
                         <p>Trip hanya sekali jalan untuk beberapa tempat wisata.
                             <br> Tarif trip sekali jalan : Rp.<b> {{$paket->harga}}</b>
                         </p> 
-                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_wisata",$paket->id_paket)}}" method="get" >
-                            {{ csrf_field() }}
-                            <input type="hidden" name="_method" value="DELETE">
-                            
-                            <button class="btn btn-primary btn-md" type="submit"> 
-                                <span class="align-middle">
-                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                                    </svg>
-                                    Hapus
-                                </span>
-                            </button>
-                        </form>
-                        <a href="{{route('edit_wisata',$paket->id_paket)}}" class="fa fa-edit btn btn-info"> Ubah Paket</a>
+                        @auth    
+                            <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_wisata",$paket->id_paket)}}" method="get" >
+                                {{ csrf_field() }}
+                                <input type="hidden" name="_method" value="DELETE">
+                                
+                                <button class="btn btn-primary btn-md" type="submit"> 
+                                    <span class="align-middle">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                        </svg>
+                                        Hapus
+                                    </span>
+                                </button>
+                            </form>
+                            <a href="{{route('edit_wisata',$paket->id_paket)}}" class="fa fa-edit btn btn-info"> Ubah Paket</a>
+                        @endauth
                     </div>
                     </div>
                     <div class="container pt-3">
@@ -64,24 +68,26 @@
                                 @if ($trip->paket==$paket->id_paket)
                                 <div class="col-md-3 ftco-animate mb-4">
                                     <div class="project-destination">
-                                        <a href="#" class="img" style="background-image: url('{{asset('storage/'.$trip->gambar)}}');">
+                                        <a  class="img" style="background-image: url('{{asset('storage/'.$trip->gambar)}}');">
                                             <div class="text">
-                                                <h3>Pulau Banoz</h3>
+                                                <h3>{{$trip->nama}}</h3>
                                                 
                                             </div>
                                         </a>
-                                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="#" method="DELETE" >
+                                        @auth
+                                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_trip",$trip->id_trip)}}" method="DELETE" >
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE">
                                             <button class="fa fa-trash btn btn-danger btn-sm" type="submit"> Hapus</button>
                                         </form>                                        
                                         <a href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</a> 
+                                        @endauth
                                     </div>           
                                 </div>
                                 @endif
                             @endforeach
                             
-                            
+                            @auth
                             <div class="col-md-3 ftco-animate mb-4">
                                 <div class="project-destination">
                                     <a href="{{route("create_trip",$paket->id_paket)}}" class="img" style="background-color: grey">
@@ -90,7 +96,8 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>   
+                            </div>
+                            @endauth   
                             
                             
                         </div>
