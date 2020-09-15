@@ -32,9 +32,7 @@
                             <input type="file" name="image" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" onchange="this.nextElementSibling.innerText = this.files[0].name">
                             <label class="custom-file-label" for="inputGroupFile04">Pilih File</label>
                         </div>
-                        <div class="input-group-append">
-                            <button class="btn btn-info" id="inputGroupFileAddon04">Unggah</button>
-                        </div>
+                       
                     </div>
                     <div class="form-group text-center">
                     <input type="submit" value="Ubah" class="btn btn-primary py-3 px-5">
