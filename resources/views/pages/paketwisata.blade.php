@@ -67,20 +67,15 @@
                                         <a href="#" class="img" style="background-image: url('{{asset('storage/'.$trip->gambar)}}');">
                                             <div class="text">
                                                 <h3>Pulau Banoz</h3>
-                                                <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="{{route("delete_trip",$trip->id_trip)}}" method="get" >
-                                                    {{ csrf_field() }}
-                                                    <input type="hidden" name="_method" value="DELETE">                        
-                                                        <span class="align-middle">
-                                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                                <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
-                                                            </svg>
-                                                            Hapus
-                                                        </span>
-                                                    </button>
-                                                </form>
-                                                <button href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</button> 
+                                                
                                             </div>
                                         </a>
+                                        <button class="fa fa-trash btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
+                                            Hapus
+                                        </button>
+
+                                        
+                                        <a href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</a> 
                                     </div>           
                                 </div>
                                 @endif
@@ -108,4 +103,29 @@
         </div>
     </section>
 
+    {{-- modal --}}
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+        <div class="modal-content">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Hapus Destinasi</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+            Yakin ingin hapus ?
+            </div>
+    
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <a type="button" href="#" class="btn btn-danger" >Ya</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">Tidak</a>
+            </div>
+    
+        </div>
+        </div>
+    </div>
 @endsection
