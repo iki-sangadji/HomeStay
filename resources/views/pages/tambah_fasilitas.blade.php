@@ -24,10 +24,10 @@
                 <div class="order-md-last d-flex">
                 <form action="#" class="bg-light p-5 contact-form">
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nama">
+                    <input type="text" class="form-control" placeholder="Nama" required>
                     </div>
                     <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Harga">
+                    <input type="text" class="form-control" placeholder="Harga" required>
                     </div>
                     <div class="form-group">
                     <input type="text" class="form-control" placeholder="Gambar">
