@@ -70,9 +70,11 @@
                                                 
                                             </div>
                                         </a>
-                                        <button class="fa fa-trash btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
-                                            Hapus
-                                        </button>
+                                        <form onsubmit="return confirm('Yakin Ingin Menghapus?');" action="#" method="DELETE" >
+                                            {{ csrf_field() }}
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <button class="btn btn-danger btn-sm" type="submit"><i class="fa fa-trash"></i> Hapus</button>
+                                        </form> 
 
                                         
                                         <a href="{{route('edit_trip',$trip->id_trip)}}" class="fa fa-edit btn btn-info btn-sm"> Ubah</a> 
@@ -103,29 +105,5 @@
         </div>
     </section>
 
-    {{-- modal --}}
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-        <div class="modal-content">
-    
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <h4 class="modal-title">Hapus Destinasi</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-    
-            <!-- Modal body -->
-            <div class="modal-body">
-            Yakin ingin hapus ?
-            </div>
-    
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            <a type="button" href="#" class="btn btn-danger" >Ya</a>
-            <a type="button" class="btn btn-primary" data-dismiss="modal">Tidak</a>
-            </div>
-    
-        </div>
-        </div>
-    </div>
+   
 @endsection
