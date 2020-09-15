@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 
 class PaketWisataController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth', ['except'=>['index']]);
+    }
     /**
      * Display a listing of the resource.
      *
@@ -81,7 +84,7 @@ class PaketWisataController extends Controller
     public function editTrip($id)
     {
         $trip=Trip::find($id);
-        return view("pages.ubah_destinasi")->with("trip",$trip);
+        return view("pages.ubah_destinasi")->with("trip",$trip)->with("id",$id);
     }
 
    
