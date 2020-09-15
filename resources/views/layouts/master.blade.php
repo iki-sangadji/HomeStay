@@ -52,7 +52,7 @@
 
 	          <li class="nav-item {{ Request::is('galeri') ? 'active' : '' }}"><a href="{{route('galeri')}}" class="nav-link">Galeri</a></li>
             <li class="nav-item {{ Request::is('profil') ? 'active' : '' }}"><a href="{{route('profil')}}" class="nav-link">Profil</a></li>
-            <li class="nav-item {{ Request::is('fasilitashomestay') ? 'active' : '' }}"><a href="{{route('fasilitas_home_stay')}}" class="nav-link">Fasilitas</a></li>
+            <li class="nav-item {{ Request::is('fasilitas-home-stay') ? 'active' : '' }}"><a href="{{route('fasilitas_home_stay')}}" class="nav-link">Fasilitas</a></li>
 	          <li class="nav-item {{ Request::is('kontak') ? 'active' : '' }}"><a href="{{route('kontak')}}" class="nav-link">Kontak</a></li>
 	          <li class="nav-item cta "><a href="{{route('paket_wisata')}}" class="nav-link">Paket Wisata</a></li>
 
