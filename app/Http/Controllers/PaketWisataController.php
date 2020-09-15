@@ -101,7 +101,6 @@ class PaketWisataController extends Controller
         if($request->has('image')){
             $trip->gambar=$request->image->store('uploads','public');
         }
-        $trip->paket=$id;
         $trip->save();
         return redirect("/paket-wisata")->with("message","Trip berhasil diubah");
     }

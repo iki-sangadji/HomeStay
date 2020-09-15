@@ -25,7 +25,7 @@
                 <form method="POST" action="{{route("update_trip",$id)}}" enctype="multipart/form-data" class="bg-light p-5 contact-form">
                     @csrf
                     <div class="form-group">
-                    <input type="text" class="form-control" value="{{$trip->nama}}" required>
+                    <input name="nama" type="text" class="form-control" value="{{$trip->nama}}" required>
                     </div>
                     <div class="input-group rounded-pill mb-3">
                         <div class="custom-file">
