@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 12 Sep 2020 pada 09.59
+-- Waktu pembuatan: 15 Sep 2020 pada 08.13
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 7.3.0
 
@@ -73,6 +73,19 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `tb_fasilitas_home_stay`
+--
+
+CREATE TABLE `tb_fasilitas_home_stay` (
+  `id_fasilitas` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `tb_fasilitas_kamar`
 --
 
@@ -88,8 +101,28 @@ CREATE TABLE `tb_fasilitas_kamar` (
 --
 
 INSERT INTO `tb_fasilitas_kamar` (`id_fasilitas`, `nama`, `created_at`, `updated_at`) VALUES
-(1, 'Fan', '2020-09-11 03:58:33', '2020-09-11 04:04:46'),
-(2, 'Hammock', '2020-09-11 03:58:44', '2020-09-11 04:05:02');
+(1, 'Fan', '2020-09-11 03:58:33', '2020-09-11 04:04:46');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_galeri`
+--
+
+CREATE TABLE `tb_galeri` (
+  `id_galeri` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `gambar` varchar(256) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_galeri`
+--
+
+INSERT INTO `tb_galeri` (`id_galeri`, `nama`, `gambar`, `created_at`, `updated_at`) VALUES
+(1, 'spot 3', 'uploads/boP756JpqAX3X48QToJhHXWA5s7ufXpLXC5I10sc.jpeg', '2020-09-12 02:50:47', '2020-09-12 02:52:26');
 
 -- --------------------------------------------------------
 
@@ -126,6 +159,57 @@ CREATE TABLE `tb_kamar` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_kamar`
+--
+
+INSERT INTO `tb_kamar` (`id_kamar`, `nama`, `deskripsi`, `gambar`, `created_at`, `updated_at`) VALUES
+(1, 'Triple bed', 'Double bed\r\na\r\na\r\na', 'uploads/tHpyQiuMHv4iQfMpYtClwOWUAdgDVwVEPUD6I6Ns.jpeg', '2020-09-12 01:29:42', '2020-09-12 01:47:03');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_paket_wisata`
+--
+
+CREATE TABLE `tb_paket_wisata` (
+  `id_paket` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `harga` double DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_paket_wisata`
+--
+
+INSERT INTO `tb_paket_wisata` (`id_paket`, `nama`, `harga`, `created_at`, `updated_at`) VALUES
+(1, 'Paket hemat', 5000000, '2020-09-14 02:53:14', '2020-09-14 02:53:14'),
+(3, 'Pak', 1000000, '2020-09-14 03:11:08', '2020-09-14 03:11:08');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_trip`
+--
+
+CREATE TABLE `tb_trip` (
+  `id_trip` int(11) NOT NULL,
+  `nama` varchar(50) DEFAULT NULL,
+  `gambar` varchar(256) DEFAULT NULL,
+  `paket` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_trip`
+--
+
+INSERT INTO `tb_trip` (`id_trip`, `nama`, `gambar`, `paket`, `created_at`, `updated_at`) VALUES
+(1, 'danau', 'uploads/lDbiTEOeQHOJKKaOhbiyueXm4rPJcKXkn2y2QFEX.jpeg', 1, '2020-09-14 03:21:59', '2020-09-14 03:21:59');
 
 -- --------------------------------------------------------
 
@@ -174,10 +258,22 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Indeks untuk tabel `tb_fasilitas_home_stay`
+--
+ALTER TABLE `tb_fasilitas_home_stay`
+  ADD PRIMARY KEY (`id_fasilitas`);
+
+--
 -- Indeks untuk tabel `tb_fasilitas_kamar`
 --
 ALTER TABLE `tb_fasilitas_kamar`
   ADD PRIMARY KEY (`id_fasilitas`);
+
+--
+-- Indeks untuk tabel `tb_galeri`
+--
+ALTER TABLE `tb_galeri`
+  ADD PRIMARY KEY (`id_galeri`);
 
 --
 -- Indeks untuk tabel `tb_info`
@@ -190,6 +286,18 @@ ALTER TABLE `tb_info`
 --
 ALTER TABLE `tb_kamar`
   ADD PRIMARY KEY (`id_kamar`);
+
+--
+-- Indeks untuk tabel `tb_paket_wisata`
+--
+ALTER TABLE `tb_paket_wisata`
+  ADD PRIMARY KEY (`id_paket`);
+
+--
+-- Indeks untuk tabel `tb_trip`
+--
+ALTER TABLE `tb_trip`
+  ADD PRIMARY KEY (`id_trip`);
 
 --
 -- Indeks untuk tabel `users`
@@ -215,10 +323,22 @@ ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT untuk tabel `tb_fasilitas_home_stay`
+--
+ALTER TABLE `tb_fasilitas_home_stay`
+  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT untuk tabel `tb_fasilitas_kamar`
 --
 ALTER TABLE `tb_fasilitas_kamar`
-  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_galeri`
+--
+ALTER TABLE `tb_galeri`
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_info`
@@ -230,7 +350,19 @@ ALTER TABLE `tb_info`
 -- AUTO_INCREMENT untuk tabel `tb_kamar`
 --
 ALTER TABLE `tb_kamar`
-  MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kamar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_paket_wisata`
+--
+ALTER TABLE `tb_paket_wisata`
+  MODIFY `id_paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_trip`
+--
+ALTER TABLE `tb_trip`
+  MODIFY `id_trip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
