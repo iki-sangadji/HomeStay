@@ -25,10 +25,10 @@
                 <form method="POST" action="{{route("store_wisata")}}" class="bg-light p-5 contact-form">
                     @csrf
                     <div class="form-group">
-                    <input type="text" name="nama" class="form-control" placeholder="Nama">
+                    <input type="text" name="nama" class="form-control" placeholder="Nama" required>
                     </div>
                     <div class="form-group">
-                        <input type="number" name="harga" class="form-control" min="0" placeholder="Harga">
+                        <input type="number" name="harga" class="form-control" min="0" placeholder="Harga" required>
                     </div>
                     {{-- <div class="form-group">
                     <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
