@@ -28,7 +28,7 @@
                 Air lautnya juga terlihat cantik dengan warna biru turquoise. Saking beningnya air laut di Pulau Misool, kamu bisa mudah melihat aneka kekayaaan alam di titik penyelamannya, 
                 seperti berbagai jenis ikan, hiu, penyu, terumbu karang, dan lain-lain.
             </p>
-            <p><a href="{{route('paketwisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
+            <p><a href="{{route('paket_wisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
             </div>
             <div class="col-md-6">
             <div class="row">

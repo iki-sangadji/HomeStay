@@ -37,11 +37,11 @@ Route::get('/tambahKamar',function(){
 Route::get('/tambah-galeri', function () {
     return view('galeri.tambahSpot');
 })->name('tambahSpot');
+
+
 Route::get('/profil',function(){
     return view('pages.profil');
 })->name('profil');
-
-
 
 Route::get('/kontak', function () {
     return view('pages.kontak');
