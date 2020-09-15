@@ -81,14 +81,14 @@
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="nama" class="form-control" id="inputEmail3">
+                                        <input type="text" name="nama" class="form-control" id="inputEmail3" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputPassword3" class="col-sm-2 col-form-label">Gambar</label>
                                     <div class="col-sm-10">
                                         <div class="custom-file">
-                                            <input type="file" name="image" class="custom-file-input" id="customFile " onchange="this.nextElementSibling.innerText = this.files[0].name">
+                                            <input type="file" name="image" class="custom-file-input" id="customFile " onchange="this.nextElementSibling.innerText = this.files[0].name" required>
                                             <label class="custom-file-label" for="customFile">Browse</label>
                                         </div>
                                     </div>
