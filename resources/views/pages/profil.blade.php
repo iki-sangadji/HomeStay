@@ -17,7 +17,7 @@
         <div class="container">
         <div class="row d-flex">
             <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate">
-            <h2 class="mb-4">Saatnya melakukan perjalanan dan petualangan</h2>
+            <h2 class="mb-4">Saatnya Melakukan Perjalanan Dan Petualangan</h2>
             <p>
                 Keindahan dari <b>Raja Ampat</b> tidak perlu dipertanyakan lagi, yang juga menjadi salah satu primadona bagi traveller. 
                 <b> Pulau Misool </b> dengan pesona dan keindaan bawah lautnya mempunyai 
@@ -28,7 +28,7 @@
                 Air lautnya juga terlihat cantik dengan warna biru turquoise. Saking beningnya air laut di Pulau Misool, kamu bisa mudah melihat aneka kekayaaan alam di titik penyelamannya, 
                 seperti berbagai jenis ikan, hiu, penyu, terumbu karang, dan lain-lain.
             </p>
-            <p><a href="{{route('paketwisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
+            <p><a href="{{route('paket_wisata')}}" class="btn btn-primary py-3 px-4">Paket Wisata</a></p>
             </div>
             <div class="col-md-6">
             <div class="row">
@@ -37,7 +37,7 @@
                     <div class="icon"><span class="flaticon-paragliding"></span></div>
                     <div class="media-body">
                     <h3 class="heading mb-3">Aktifitas</h3>
-                    <p>Banyak aktiftitas seru dan  menyenangkan di Pulau misool</p>
+                    <p>Banyak aktiftitas seru dan  menyenangkan di Pulau Misool</p>
                     </div>
                 </div>
                 </div>
@@ -83,7 +83,7 @@
             <div class="col-md-6 pl-md-5 py-5">
             <div class="row justify-content-start pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
-                <h2 class="mb-4">Jadikan Tur Anda Berkesan dan Aman Bersama Kami</h2>
+                <h2 class="mb-4">Jadikan Tur Anda Berkesan Dan Menyenangkan Bersama Kami</h2>
                 <p>
                     Momen berlibur juga akan jauh lebih berkesan jika dilewatkan dengan pengalaman yang menyenangkan. 
                     Ingin Menikmati keindahan dan daya tarik di <b>Pulau Misool</b> kami dapat menyediakan tempat untuk
