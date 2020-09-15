@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class InfoController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth', ['except'=>['index']]);
+        $this->middleware('auth', ['except'=>['harga']]);
     }
     /**
      * Display a listing of the resource.

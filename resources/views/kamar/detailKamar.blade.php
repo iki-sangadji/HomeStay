@@ -22,7 +22,7 @@
 			</div>
 		</div>
 	</section>
-	
+	@auth
 	<section class="ftco-section ftco-no-pt">
 		<div class="container">
 			<div class="d-flex justify-content-between mt-5 search-wrap-1 ftco-animate p-4">
@@ -42,6 +42,8 @@
 		</div>
 	</section>
 
+		
+	@endauth
     <section class="ftco-counter img" id="section-counter">
 		<div class="container">
 			<div class="row d-flex ftco-animate">
