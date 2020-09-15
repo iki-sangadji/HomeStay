@@ -39,6 +39,9 @@ class KamarController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'image'=>'required|image',
+        ]);
         $kamar= new Kamar;
         $kamar->nama= $request->input('nama');
         $kamar->deskripsi= $request->input('deskripsi');
@@ -59,6 +62,9 @@ class KamarController extends Controller
 
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'image'=>'image',
+        ]);
         $kamar= Kamar::find($id);
         $kamar->nama= $request->input('nama');
         $kamar->deskripsi= $request->input('deskripsi');

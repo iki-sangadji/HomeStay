@@ -130,8 +130,9 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'image' => [
+            'required' => ' Gambar harus diisi',
+            'image'=> ' File harus berupa gambar',
         ],
     ],
 

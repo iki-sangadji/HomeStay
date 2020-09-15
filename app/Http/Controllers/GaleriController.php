@@ -35,6 +35,9 @@ class GaleriController extends Controller
     public function store(Request $request)
     {
         $galeri= new Galeri;
+        $request->validate([
+            'image'=>'required|image',
+        ]);
         $galeri->nama= $request->input('nama');
         if($request->has('image')){
             $galeri->gambar=$request->image->store('uploads','public');
@@ -54,6 +57,9 @@ class GaleriController extends Controller
     public function update(Request $request, $id)
     {
         $galeri= Galeri::find($id);
+        $request->validate([
+            'image'=>'image',
+        ]);
         $galeri->nama= $request->input('nama');
         if($request->has('image')){
             $galeri->gambar=$request->image->store('uploads','public');

@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
+    return redirect("/");
+});
+
 Route::get('/', function () {
     return view('pages.beranda');
 })->name('beranda');
