@@ -1,0 +1,19 @@
+
+============================== Petunjuk ==============================
+
+1. Copy folder "HomeStay" ke dalam folder "htdocs"
+2. Buat database baru di PhpMyAdmin dengan nama "db_home_stay"
+3. Import file script "db_home_stay.sql" di "db_home_stay"
+4. Jalankan link ini pada browser "http://localhost/HomeStay/public/foo"
+5. Kemudian sistem dapat berjalan
+6. Untuk Akun admin :
+    Email = wopontantun@gmail.com(dapat diganti secara manual dalam database, pada tabel "users")
+    Password = 12345678 
+
+=======================================================================
+
+Catatan : Untuk akun gmail woponta ntun homestay
+    Email = wopontantun@gmail.com
+    Password = wopontantun10092020
+
+
