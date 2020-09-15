@@ -40,7 +40,7 @@
 						<form action="{{route('update_info')}}" method="post" onsubmit="#">
 							@csrf
 							<div class="form-group">
-								<textarea name="info" id="" cols="30" rows="10" class="form-control" style="white-space: pre-wrap;">{{$info->info}}</textarea>
+								<textarea name="info" id="" cols="30" rows="10" class="form-control" style="white-space: pre-wrap;" required>{{$info->info}}</textarea>
 							</div>
 							<input type="hidden" name="tag" value="harga">
 							<div class="form-group">

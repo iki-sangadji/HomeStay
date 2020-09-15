@@ -90,7 +90,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Woponta Ntu Homestay</h2>
+              <h2 class="ftco-heading-2 text-uppercase">Woponta Ntun Homestay</h2>
               <p>Memberikan rasa aman dan nyaman. Pengalaman tak terlupakan.</p>
               
             </div>

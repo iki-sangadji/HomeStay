@@ -16,7 +16,14 @@
 		<div class="container">
 			<div class="row d-flex ftco-animate">
 				<div class="col-md-6">
-					<div class="row">
+					<div class="project-destination">
+						<a href="#" class="img" style="background-image: url('{{asset('storage/'.$galeri->gambar)}}');">
+							<div class="text">
+								<h3>{{$galeri->nama}}</h3>
+							</div>
+						</a>
+					</div>
+					{{-- <div class="row">
 						<div class="col-md-6 d-flex align-self-stretch ftco-animate">
 							<div class="media block-6 services d-block">
 								<div class="icon"><span class="flaticon-paragliding"></span></div>
@@ -61,7 +68,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> --}}
 				</div>
 				<div class="col-md-6 pl-md-5 py-5">
 					<div class="row justify-content-start pb-3">
@@ -73,7 +80,7 @@
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-2 col-form-label">Nama</label>
                                     <div class="col-sm-10">
-										<input type="text" name="nama" class="form-control" id="inputEmail3" value="{{$galeri->nama}}">
+										<input type="text" name="nama" class="form-control" id="inputEmail3" value="{{$galeri->nama}}" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
