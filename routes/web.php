@@ -102,7 +102,7 @@ Route::get('/edit-paket/{id}','PaketWisataController@editPaket')->name('edit_wis
 Route::post('/update-paket/{id}','PaketWisataController@updatePaket')->name('update_wisata');
 Route::get('/delete-paket/{id}','PaketWisataController@destroyPaket')->name('delete_wisata');
 //Trip
-ROute::get('/paket/{id}/tambah-trip','PaketWisataController@createTrip')->name('create_trip');
+Route::get('/paket/{id}/tambah-trip','PaketWisataController@createTrip')->name('create_trip');
 Route::post('/paket/{id}/store-trip','PaketWisataController@storeTrip')->name('store_trip');
 Route::get('/edit-trip/{id}','PaketWisataController@editTrip')->name('edit_trip');
 Route::post('/update-trip/{id}','PaketWisataController@updateTrip')->name('update_trip');
