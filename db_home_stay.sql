@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Sep 2020 pada 11.51
+-- Waktu pembuatan: 17 Sep 2020 pada 07.02
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.4.7
 
@@ -122,6 +122,13 @@ CREATE TABLE `tb_info` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tb_info`
+--
+
+INSERT INTO `tb_info` (`id_info`, `tag`, `info`, `created_at`, `updated_at`) VALUES
+(1, 'harga', 'DALAM 1 KAMAR TERSEDIA 2 TEMPAT TIDUR  DENGAN TARIF 1 MALAM :\r\nUNTUK 1 ORANG	: 300.000\r\nUNTUK 2 ORANG	: 500.000\r\nJIKA ADA 2 PENGUNJUNG INGIN MENAMBAHKAN 1 PENGUNJUNG UNTUK BERSAMA MEREKA MAKA TARIF YANG HARUS DIBAYA : 650.000', NULL, '2020-09-10 20:38:51');
 
 -- --------------------------------------------------------
 
