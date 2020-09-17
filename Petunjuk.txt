@@ -12,6 +12,8 @@
 
 =======================================================================
 
+untuk login admin akses link "http://localhost/HomeStay/public/login"
+
 Catatan : Untuk akun gmail woponta ntun homestay
     Email = wopontantun@gmail.com
     Password = wopontantun10092020

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Sep 2020 pada 08.13
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.3.0
+-- Waktu pembuatan: 16 Sep 2020 pada 11.51
+-- Versi server: 10.4.13-MariaDB
+-- Versi PHP: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -34,7 +33,7 @@ CREATE TABLE `failed_jobs` (
   `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -96,13 +95,6 @@ CREATE TABLE `tb_fasilitas_kamar` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `tb_fasilitas_kamar`
---
-
-INSERT INTO `tb_fasilitas_kamar` (`id_fasilitas`, `nama`, `created_at`, `updated_at`) VALUES
-(1, 'Fan', '2020-09-11 03:58:33', '2020-09-11 04:04:46');
-
 -- --------------------------------------------------------
 
 --
@@ -117,13 +109,6 @@ CREATE TABLE `tb_galeri` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `tb_galeri`
---
-
-INSERT INTO `tb_galeri` (`id_galeri`, `nama`, `gambar`, `created_at`, `updated_at`) VALUES
-(1, 'spot 3', 'uploads/boP756JpqAX3X48QToJhHXWA5s7ufXpLXC5I10sc.jpeg', '2020-09-12 02:50:47', '2020-09-12 02:52:26');
-
 -- --------------------------------------------------------
 
 --
@@ -133,17 +118,10 @@ INSERT INTO `tb_galeri` (`id_galeri`, `nama`, `gambar`, `created_at`, `updated_a
 CREATE TABLE `tb_info` (
   `id_info` int(11) NOT NULL,
   `tag` varchar(256) DEFAULT NULL,
-  `info` longtext,
+  `info` longtext DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tb_info`
---
-
-INSERT INTO `tb_info` (`id_info`, `tag`, `info`, `created_at`, `updated_at`) VALUES
-(1, 'harga', 'DALAM 1 KAMAR TERSEDIA 2 TEMPAT TIDUR  DENGAN TARIF 1 MALAM :\r\nUNTUK 1 ORANG	: 300.000\r\nUNTUK 2 ORANG	: 500.000\r\nJIKA ADA 2 PENGUNJUNG INGIN MENAMBAHKAN 1 PENGUNJUNG UNTUK BERSAMA MEREKA MAKA TARIF YANG HARUS DIBAYA : 650.000', NULL, '2020-09-11 03:38:51');
 
 -- --------------------------------------------------------
 
@@ -154,18 +132,11 @@ INSERT INTO `tb_info` (`id_info`, `tag`, `info`, `created_at`, `updated_at`) VAL
 CREATE TABLE `tb_kamar` (
   `id_kamar` int(11) NOT NULL,
   `nama` varchar(50) DEFAULT NULL,
-  `deskripsi` mediumtext,
+  `deskripsi` mediumtext DEFAULT NULL,
   `gambar` varchar(256) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tb_kamar`
---
-
-INSERT INTO `tb_kamar` (`id_kamar`, `nama`, `deskripsi`, `gambar`, `created_at`, `updated_at`) VALUES
-(1, 'Triple bed', 'Double bed\r\na\r\na\r\na', 'uploads/tHpyQiuMHv4iQfMpYtClwOWUAdgDVwVEPUD6I6Ns.jpeg', '2020-09-12 01:29:42', '2020-09-12 01:47:03');
 
 -- --------------------------------------------------------
 
@@ -181,14 +152,6 @@ CREATE TABLE `tb_paket_wisata` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data untuk tabel `tb_paket_wisata`
---
-
-INSERT INTO `tb_paket_wisata` (`id_paket`, `nama`, `harga`, `created_at`, `updated_at`) VALUES
-(1, 'Paket hemat', 5000000, '2020-09-14 02:53:14', '2020-09-14 02:53:14'),
-(3, 'Pak', 1000000, '2020-09-14 03:11:08', '2020-09-14 03:11:08');
-
 -- --------------------------------------------------------
 
 --
@@ -203,13 +166,6 @@ CREATE TABLE `tb_trip` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tb_trip`
---
-
-INSERT INTO `tb_trip` (`id_trip`, `nama`, `gambar`, `paket`, `created_at`, `updated_at`) VALUES
-(1, 'danau', 'uploads/lDbiTEOeQHOJKKaOhbiyueXm4rPJcKXkn2y2QFEX.jpeg', 1, '2020-09-14 03:21:59', '2020-09-14 03:21:59');
 
 -- --------------------------------------------------------
 
@@ -233,7 +189,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(12, 'admin', 'ikisangadji53@gmail.com', NULL, '$2y$10$EDXdzjUQODoAI85UTDEYcuqbLziDWe7ZPlo9PTG8Ai3Pu6o.2sbfW', NULL, '2020-09-10 19:50:28', '2020-09-10 19:50:28');
+(12, 'admin', 'wopontantun@gmail.com', NULL, '$2y$10$EDXdzjUQODoAI85UTDEYcuqbLziDWe7ZPlo9PTG8Ai3Pu6o.2sbfW', NULL, '2020-09-10 19:50:28', '2020-09-10 19:50:28');
 
 --
 -- Indexes for dumped tables
@@ -326,7 +282,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT untuk tabel `tb_fasilitas_home_stay`
 --
 ALTER TABLE `tb_fasilitas_home_stay`
-  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_fasilitas_kamar`
@@ -356,13 +312,13 @@ ALTER TABLE `tb_kamar`
 -- AUTO_INCREMENT untuk tabel `tb_paket_wisata`
 --
 ALTER TABLE `tb_paket_wisata`
-  MODIFY `id_paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_trip`
 --
 ALTER TABLE `tb_trip`
-  MODIFY `id_trip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_trip` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
